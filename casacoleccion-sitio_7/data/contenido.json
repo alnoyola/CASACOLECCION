@@ -1,0 +1,131 @@
+{
+  "inicio": {
+    "eyebrow": "Art & Antiques Gallery · San Pedro Garza García",
+    "linea1": "Creando",
+    "linea2": "colecciones",
+    "linea3": "desde 1971",
+    "subtitulo": "Un espacio para el arte y las antigüedades. Porque cada pieza cuenta una historia, cada objeto guarda un legado.",
+    "boton1": "Ver colección",
+    "boton2": "Agenda tu cita",
+    "pilares": [
+      {
+        "titulo": "Arte",
+        "descripcion": "Piezas únicas, antiguas y modernas"
+      },
+      {
+        "titulo": "Historia",
+        "descripcion": "Procedencia y siglos de relato"
+      },
+      {
+        "titulo": "Inversión",
+        "descripcion": "Valor que perdura en el tiempo"
+      }
+    ]
+  },
+  "nosotros": {
+    "etiqueta": "Sobre nosotros",
+    "titulo": "Más que objetos,",
+    "titulo_cursiva": "historias que trascienden",
+    "intro": "Casa Colección es una galería de arte y antigüedades en San Pedro Garza García, creada para quienes buscan piezas con alma, procedencia y valor duradero.",
+    "texto": "Detrás de cada selección hay más de tres décadas de oficio en el arte y cuatro décadas recorriendo el mundo en busca de objetos extraordinarios. Como perito valuador de obras de arte y antigüedades, cuidamos la autenticidad, la historia y la inversión de cada pieza, para que coleccionistas y nuevos amantes del arte compren con confianza.",
+    "stats": [
+      {
+        "numero": "1971",
+        "texto": "Creando colecciones"
+      },
+      {
+        "numero": "33+",
+        "texto": "Años en el arte"
+      },
+      {
+        "numero": "40",
+        "texto": "Años viajando por el mundo"
+      },
+      {
+        "numero": "Perito",
+        "texto": "Valuador certificado"
+      }
+    ]
+  },
+  "servicios": {
+    "etiqueta": "Nuestros servicios",
+    "titulo": "Acompañamiento experto en cada etapa",
+    "items": [
+      {
+        "titulo": "Valuaciones",
+        "descripcion": "Avalúos de arte y antigüedades por perito valuador, para seguros, herencias, compraventas y documentación patrimonial.",
+        "punto1": "Avalúo virtual con certificado",
+        "punto2": "Entrega en 3 a 5 días hábiles"
+      },
+      {
+        "titulo": "Consignaciones",
+        "descripcion": "Confía tu pieza a nuestra galería: la evaluamos, la presentamos a coleccionistas y la vendemos al mejor valor.",
+        "punto1": "Exhibición curada",
+        "punto2": "Acuerdo claro y transparente"
+      },
+      {
+        "titulo": "Ventas",
+        "descripcion": "Piezas únicas con procedencia, de arte antiguo y moderno, esculturas y objetos de colección, seleccionadas con criterio.",
+        "punto1": "Asesoría personalizada",
+        "punto2": "Búsqueda de piezas específicas"
+      },
+      {
+        "titulo": "Restauraciones",
+        "descripcion": "Conservación y restauración respetuosa para devolver belleza y estabilidad a tus obras, muebles y objetos antiguos.",
+        "punto1": "Diagnóstico previo",
+        "punto2": "Respeto a la pátina original"
+      }
+    ]
+  },
+  "valuacion": {
+    "titulo": "Solicita tu avalúo virtual",
+    "intro": "Para valuar tu pieza a distancia, comparte la siguiente información: tus datos de contacto, una breve descripción de la pieza, fotografías claras y, si cuentas con ella, la documentación que la acompaña (facturas, certificados, avalúos previos o historia de procedencia). Nuestro perito valuador la revisará y te entregará tu certificado de valuación.",
+    "precio": "$1,200 MXN",
+    "tiempo_entrega": "3 a 5 días hábiles",
+    "requisitos_fotos": "Las fotografías deben ser de buena calidad y con buena iluminación: usa luz natural o bien distribuida, sin flash directo, con fondo liso y la imagen bien enfocada. Incluye vista frontal, reverso o base y un detalle como firma, marca o sello.",
+    "nota_pago": "Tu avalúo inicia una vez que recibimos tu información y se confirma tu pago.",
+    "link_pago": ""
+  },
+  "consignaciones": {
+    "titulo": "Consigna tu pieza con nosotros",
+    "intro": "Cuéntanos sobre la pieza que deseas consignar. Con la información y las fotografías que nos compartas haremos una primera evaluación y nos pondremos en contacto contigo para platicar condiciones, precio de venta y siguientes pasos.",
+    "requisitos_fotos": "Fotografías de buena calidad y buena iluminación: luz natural o bien distribuida, sin flash directo, fondo liso y bien enfocadas. Incluye vista frontal, reverso o base y un detalle como firma, marca o sello."
+  },
+  "ventas": {
+    "titulo": "Encuentra tu próxima pieza",
+    "intro": "Dinos qué pieza te interesa o qué estás buscando (época, estilo, autor, tamaño, presupuesto aproximado). Si tienes una imagen de referencia, puedes adjuntarla. Te contactaremos con opciones de nuestra colección o iniciaremos la búsqueda por ti."
+  },
+  "restauraciones": {
+    "titulo": "Solicita una restauración",
+    "intro": "Describe tu pieza y el daño que presenta. Con las fotografías haremos un primer diagnóstico y nos comunicaremos contigo para explicarte el proceso, los tiempos y la cotización.",
+    "requisitos_fotos": "Se necesitan 5 fotografías de buena calidad y buena iluminación (luz natural o bien distribuida, sin flash directo, bien enfocadas): 1 de la pieza por delante, 1 por detrás y 3 acercamientos (close-ups) del daño."
+  },
+  "faq": {
+    "titulo": "Resolvemos tus dudas",
+    "preguntas": [
+      {
+        "pregunta": "¿Cómo se determina el valor de una pieza?",
+        "respuesta": "Un perito valuador analiza autenticidad, época, materiales, estado de conservación, procedencia y comportamiento del mercado. Recibes un informe por escrito que puedes usar para seguros, herencias o compraventas."
+      },
+      {
+        "pregunta": "¿Cómo funciona la consignación de mis piezas?",
+        "respuesta": "Nos envías la información de tu pieza, la evaluamos y acordamos por escrito el precio de venta y las condiciones. La exhibimos en la galería y la presentamos a nuestros coleccionistas. Cuando se vende, te liquidamos según lo pactado."
+      },
+      {
+        "pregunta": "¿Puedo visitar la galería sin comprar?",
+        "respuesta": "Por supuesto. Casa Colección es un espacio dedicado al arte y recibimos visitas con cita previa. Llámanos y te atenderemos con calma, sin ningún compromiso."
+      }
+    ]
+  },
+  "newsletter": {
+    "titulo": "Sé el primero en conocer nuestras nuevas piezas",
+    "texto": "Recibe invitaciones a exposiciones privadas, nuevas piezas y novedades de nuestras subastas."
+  },
+  "contacto": {
+    "direccion": "Río Orinoco #484, San Pedro Garza García, N.L.",
+    "telefono": "81 8080 5580"
+  },
+  "footer": {
+    "lema": "“Coleccionar es preservar la belleza del pasado para enriquecer el futuro.”"
+  }
+}

@@ -1,0 +1,97 @@
+CASA COLECCION - SITIO WEB (versión con formularios y textos editables)
+=======================================================================
+
+CONTENIDO DE LA CARPETA
+  index.html                 La página
+  js/site.js                 Comportamiento (formularios, slideshow, pagos)
+  data/productos.json        Piezas del slideshow (se edita desde /admin)
+  data/contenido.json        Todos los textos de la página (se edita desde /admin)
+  imagenes/                  Fotos
+  admin/                     Panel de administración (tusitio.com/admin)
+  netlify/functions/         Pago automático con Mercado Pago (opcional)
+  netlify.toml               Configuración de Netlify
+
+1) PUESTA EN MARCHA (una sola vez)
+  a. Sube TODO el contenido de esta carpeta a un repositorio de GitHub.
+  b. En admin/config.yml cambia TU-USUARIO-GITHUB/casacoleccion-web por tu repositorio.
+  c. En Netlify: Add new site > Import an existing project > GitHub > tu repositorio.
+  d. En Netlify activa el acceso con GitHub para el panel (OAuth > GitHub), como
+     se explicó antes, y entra a tusitio.netlify.app/admin.
+
+2) CORREOS DE LOS FORMULARIOS (obligatorio, una sola vez)
+  Después del primer despliegue, Netlify detecta 5 formularios:
+  valuaciones, consignaciones, ventas, restauraciones y newsletter.
+  Para cada uno: en Netlify > tu sitio > Forms (o Project configuration > Notifications >
+  Form submission notifications) > Add notification > Email notification, y elige:
+     valuaciones     ->  valuaciones@arteyantiguedades.mx
+     consignaciones  ->  consignaciones@arteyantiguedades.mx
+     ventas          ->  ventas@arteyantiguedades.mx
+     restauraciones  ->  restauraciones@arteyantiguedades.mx
+     newsletter      ->  el correo que prefieras
+  Notas: el correo trae los datos del formulario y enlaces para ver/descargar las
+  fotos y la papelería (no van como adjuntos). Todo también queda guardado en Forms.
+  Spam: ya incluye filtro automático y un campo trampa.
+  Límite de Netlify: 8 MB por envío; la página reduce las fotos automáticamente.
+  Revisa en tu cuenta de Netlify cuántos envíos al mes incluye tu plan.
+
+3) PAGO DE LA VALUACION CON MERCADO PAGO
+  Costo: 1,200 MXN. El texto que se muestra se edita en /admin > Textos > Formulario
+  de valuaciones. OJO: el cobro real lo define Mercado Pago, no la página.
+
+  OPCION A - Tu propio enlace de pago
+    1. En Mercado Pago crea un link de pago por $1,200 MXN.
+    2. En /admin > Textos de la página > Formulario de valuaciones > "Enlace de pago
+       de Mercado Pago", pega el enlace completo y publica.
+    3. Pregunta en tu cuenta de Mercado Pago si ese link permite una "URL de retorno"
+       o "redirección al finalizar". Si la permite, usa:
+          https://TU-DOMINIO/?pago=exitoso
+       Al volver, la página muestra "Gracias por tu pago, nos comunicaremos contigo
+       a la brevedad".
+       Si tu link NO permite redirección, el cliente verá la pantalla de Mercado Pago
+       y no regresará solo; usa la Opción B.
+
+  OPCION B - Pago automático con redirección (recomendada)
+    Deja vacío el campo "Enlace de pago". La página usará netlify/functions/crear-pago.js.
+    1. En Mercado Pago ve a Tus integraciones > Crear aplicación > Checkout Pro.
+    2. Copia tu "Access Token" de producción (no lo compartas con nadie).
+    3. En Netlify: Site configuration > Environment variables > Add variable:
+          MP_ACCESS_TOKEN = (tu Access Token)
+       (Opcional: PRECIO_VALUACION = 1200)
+    4. Vuelve a desplegar (Deploys > Trigger deploy).
+    Al pagar, Mercado Pago regresa al sitio con ?pago=exitoso y se muestra el mensaje
+    de gracias. Pruébalo primero con credenciales de prueba de Mercado Pago.
+  Mercado Pago te notifica cada pago en su propia app/correo; compara el correo del
+  cliente con el del formulario para unir pago y solicitud.
+
+4) EDITAR PIEZAS Y TEXTOS (cada vez que quieras)
+  Entra a tusitio.com/admin
+    - "Piezas de la colección": agrega, oculta, reordena piezas y cambia fotos/descripciones.
+    - "Textos de la página": inicio, nosotros, servicios, formularios, preguntas
+      frecuentes, newsletter, teléfono/dirección y pie de página.
+  Pulsa Publish; Netlify actualiza la página en 1 a 2 minutos.
+  Lo que NO se edita desde el panel (requiere pedirme el cambio): los campos de los
+  formularios, el diseño y las secciones nuevas.
+
+5) PAGINA DE VALUACIONES (casacoleccion.mx/valuaciones)
+  Archivo: valuaciones/index.html. Explica quién valúa (Ana Leticia Noyola Fernandez),
+  qué se valúa, para qué sirve, presencial y digital, cobertura nacional, pasos,
+  formulario de avalúo virtual y preguntas frecuentes.
+  - DOMINIO: en index.html, valuaciones/index.html, sitemap.xml y robots.txt se usó
+    https://casacoleccion.mx como dominio. Si tu dominio real
+    es otro (por ejemplo arteyantiguedades.mx), pídeme regenerar el sitio con el dominio correcto.
+    Debe coincidir con el dominio que conectes en Netlify.
+  - Netlify agrega una diagonal final (/valuaciones/); es normal.
+  - El formulario de esta página usa el mismo formulario "valuaciones" del inicio, así que
+    sus envíos llegan al mismo correo configurado en Netlify.
+  - Los textos de esta página están fijos en el HTML (conviene para Google). Solo el costo,
+    el tiempo de entrega y el enlace de pago se editan desde /admin.
+
+6) PARA QUE GOOGLE RELACIONE TU NOMBRE + CASA COLECCION + VALUACIONES
+  - La página ya incluye datos estructurados (schema.org) con tu nombre, Casa Colección,
+    el servicio de valuación, dirección y preguntas frecuentes, además de sitemap.xml.
+  - Registra el sitio en Google Search Console (search.google.com/search-console),
+    verifica tu dominio y envía https://TU-DOMINIO/sitemap.xml.
+  - Crea o reclama el Perfil de Negocio de Google de Casa Colección con la misma dirección,
+    teléfono y el mismo nombre escrito igual: Ana Leticia Noyola Fernandez.
+  - Usa tu nombre exactamente igual en Instagram, Facebook, directorios y cualquier nota de prensa.
+  Nada de esto garantiza posiciones en Google; ayuda a que Google entienda y relacione los datos.
