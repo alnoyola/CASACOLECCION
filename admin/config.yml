@@ -107,7 +107,7 @@ collections:
               - { label: "Tiempo de entrega del certificado", name: tiempo_entrega, widget: string }
               - { label: "Indicaciones de las fotografías", name: requisitos_fotos, widget: text }
               - { label: "Nota sobre el pago", name: nota_pago, widget: text }
-              - { label: "Enlace de pago de Mercado Pago", name: link_pago, widget: string, required: false, hint: "Pega aquí tu enlace completo (https://...). Si lo dejas vacío, se intenta el pago automático." }
+              - { label: "Enlace de pago de Mercado Pago", name: link_pago, widget: string, required: false, hint: "Pega aquí tu enlace completo (https://mpago.li/1w8azjW). Si lo dejas vacío, se intenta el pago automático." }
           - label: "Formulario de consignaciones"
             name: consignaciones
             widget: object
