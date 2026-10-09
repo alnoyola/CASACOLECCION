@@ -1,0 +1,256 @@
+# Configuración del panel de administración (Decap CMS)
+backend:
+  name: github
+  repo: TU-USUARIO-GITHUB/casacoleccion-web   # <-- CAMBIA ESTO: usuario/nombre-del-repositorio
+  branch: main
+
+locale: es
+media_folder: imagenes        # carpeta donde se guardan las fotos subidas
+public_folder: /imagenes      # ruta pública de esas fotos
+site_url: https://TU-SITIO.netlify.app   # <-- opcional: cámbialo por tu dirección
+
+collections:
+  - name: piezas
+    label: Piezas de la colección
+    files:
+      - name: productos
+        label: Piezas del slideshow
+        file: data/productos.json
+        format: json
+        fields:
+          - label: Piezas
+            label_singular: Pieza
+            name: productos
+            widget: list
+            summary: "{{fields.titulo}}"
+            hint: "Arrastra para cambiar el orden. La primera pieza es la que se ve al entrar."
+            fields:
+              - { label: "Mostrar en la página", name: publicado, widget: boolean, default: true, hint: "Apágalo para ocultar la pieza (por ejemplo si ya se vendió) sin borrarla." }
+              - { label: "Nombre de la pieza", name: titulo, widget: string }
+              - { label: "Etiqueta (época, categoría)", name: etiqueta, widget: string, hint: "Ej. Escultura · Siglo XIX" }
+              - { label: "Material o frase corta", name: subtitulo, widget: string, required: false, hint: "Ej. Madera policromada" }
+              - { label: "Descripción", name: descripcion, widget: text, required: false }
+              - { label: "Foto", name: imagen, widget: image, hint: "De preferencia vertical o cuadrada, con buena luz." }
+              - { label: "Enfoque de la foto", name: enfoque, widget: select, options: [{label: Centro, value: centro}, {label: Arriba (para figuras altas), value: arriba}], default: centro }
+
+  - name: textos
+    label: Textos de la página
+    files:
+      - name: contenido
+        label: Todos los textos
+        file: data/contenido.json
+        format: json
+        fields:
+          - label: "Inicio"
+            name: inicio
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Línea superior", name: eyebrow, widget: string }
+              - { label: "Título, línea 1", name: linea1, widget: string }
+              - { label: "Título, línea 2 (cursiva dorada)", name: linea2, widget: string }
+              - { label: "Título, línea 3 (contorno)", name: linea3, widget: string }
+              - { label: "Subtítulo", name: subtitulo, widget: text }
+              - { label: "Botón 1", name: boton1, widget: string }
+              - { label: "Botón 2", name: boton2, widget: string }
+              - label: "Tres pilares"
+                name: pilares
+                widget: list
+                min: 3
+                max: 3
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Descripción, name: descripcion, widget: string }
+          - label: "Nosotros"
+            name: nosotros
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Etiqueta, name: etiqueta, widget: string }
+              - { label: "Título (primera parte)", name: titulo, widget: string }
+              - { label: "Título (parte en cursiva)", name: titulo_cursiva, widget: string }
+              - { label: "Párrafo principal", name: intro, widget: text }
+              - { label: "Segundo párrafo", name: texto, widget: text }
+              - label: "Cifras (4)"
+                name: stats
+                widget: list
+                min: 4
+                max: 4
+                fields:
+                  - { label: Cifra o palabra, name: numero, widget: string }
+                  - { label: Texto, name: texto, widget: string }
+          - label: "Servicios (tarjetas)"
+            name: servicios
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Etiqueta, name: etiqueta, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - label: "Tarjetas (Valuaciones, Consignaciones, Ventas, Restauraciones — en ese orden)"
+                name: items
+                widget: list
+                min: 4
+                max: 4
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Descripción, name: descripcion, widget: text }
+                  - { label: "Punto 1", name: punto1, widget: string }
+                  - { label: "Punto 2", name: punto2, widget: string }
+          - label: "Formulario de valuaciones (avalúo virtual)"
+            name: valuacion
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: "Texto introductorio", name: intro, widget: text }
+              - { label: "Costo (se muestra en la página)", name: precio, widget: string, hint: "Ej. $1,200 MXN. Ojo: el cobro real lo define tu enlace de Mercado Pago." }
+              - { label: "Tiempo de entrega del certificado", name: tiempo_entrega, widget: string }
+              - { label: "Indicaciones de las fotografías", name: requisitos_fotos, widget: text }
+              - { label: "Nota sobre el pago", name: nota_pago, widget: text }
+              - { label: "Enlace de pago de Mercado Pago", name: link_pago, widget: string, required: false, hint: "Pega aquí tu enlace completo (https://...). Si lo dejas vacío, se intenta el pago automático." }
+          - label: "Formulario de consignaciones"
+            name: consignaciones
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: "Texto introductorio", name: intro, widget: text }
+              - { label: "Indicaciones de las fotografías", name: requisitos_fotos, widget: text }
+          - label: "Formulario de ventas"
+            name: ventas
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: "Texto introductorio", name: intro, widget: text }
+          - label: "Formulario de restauraciones"
+            name: restauraciones
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: "Texto introductorio", name: intro, widget: text }
+              - { label: "Indicaciones de las fotografías", name: requisitos_fotos, widget: text }
+          - label: "Preguntas frecuentes"
+            name: faq
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Título de la sección", name: titulo, widget: string }
+              - label: Preguntas
+                name: preguntas
+                widget: list
+                summary: "{{fields.pregunta}}"
+                fields:
+                  - { label: Pregunta, name: pregunta, widget: string }
+                  - { label: Respuesta, name: respuesta, widget: text }
+          - label: "Newsletter"
+            name: newsletter
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }
+          - label: "Contacto"
+            name: contacto
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Dirección, name: direccion, widget: string }
+              - { label: "Teléfono (10 dígitos)", name: telefono, widget: string, hint: "Ej. 81 8080 5580. También se usa para los enlaces de llamada y WhatsApp." }
+              - { label: "Instagram (enlace completo)", name: instagram, widget: string, required: false, hint: "https://www.instagram.com/tu_usuario" }
+              - { label: "Facebook (enlace completo)", name: facebook, widget: string, required: false, hint: "https://www.facebook.com/tu_pagina" }
+          - label: "Pie de página"
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Frase, name: lema, widget: text }
+          - label: "Página de valuaciones (/valuaciones)"
+            name: pagina_valuaciones
+            widget: object
+            collapsed: true
+            hint: "Para escribir en negritas pon el texto entre **dobles asteriscos**. Tu nombre en la ficha y el título principal son fijos para el posicionamiento en Google."
+            fields:
+              - { label: "Texto principal bajo el título", name: intro, widget: text }
+              - label: "Tres datos destacados"
+                name: chips
+                widget: list
+                min: 3
+                max: 3
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Texto, name: texto, widget: string }
+              - label: "Quién realiza las valuaciones"
+                name: quien
+                widget: object
+                fields:
+                  - { label: "Cargo (junto a tu nombre en la ficha)", name: cargo, widget: string }
+                  - { label: "Líneas de la ficha profesional", name: ficha, widget: text, hint: "Una línea por renglón." }
+                  - { label: "Título (primera parte)", name: titulo, widget: string }
+                  - { label: "Título (parte en cursiva)", name: titulo_cursiva, widget: string }
+                  - { label: "Párrafo 1", name: parrafo1, widget: text }
+                  - { label: "Párrafo 2", name: parrafo2, widget: text }
+                  - label: "Cifras (3)"
+                    name: stats
+                    widget: list
+                    min: 3
+                    max: 3
+                    fields:
+                      - { label: Cifra, name: numero, widget: string }
+                      - { label: Texto, name: texto, widget: string }
+              - label: "Qué valuamos"
+                name: objetos
+                widget: object
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - label: "Categorías"
+                    name: lista
+                    widget: list
+                    summary: "{{fields.titulo}}"
+                    fields:
+                      - { label: Nombre, name: titulo, widget: string }
+                      - { label: Descripción, name: descripcion, widget: text }
+                  - { label: "Nota final", name: nota, widget: string }
+              - label: "Para qué solicitarla"
+                name: para_que
+                widget: object
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - label: Motivos
+                    name: lista
+                    widget: list
+                    summary: "{{fields.titulo}}"
+                    fields:
+                      - { label: Nombre, name: titulo, widget: string }
+                      - { label: Descripción, name: descripcion, widget: text }
+              - label: "Presencial y digital"
+                name: modalidades
+                widget: object
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: "Frase de cobertura nacional", name: cobertura, widget: string }
+              - label: "Cómo funciona (pasos)"
+                name: pasos
+                widget: object
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - label: Pasos
+                    name: lista
+                    widget: list
+                    summary: "{{fields.titulo}}"
+                    fields:
+                      - { label: Paso, name: titulo, widget: string }
+                      - { label: Descripción, name: descripcion, widget: text }
+              - label: "Preguntas frecuentes de valuaciones"
+                name: faq
+                widget: object
+                fields:
+                  - { label: Título, name: titulo, widget: string }
+                  - label: Preguntas
+                    name: lista
+                    widget: list
+                    summary: "{{fields.titulo}}"
+                    fields:
+                      - { label: Pregunta, name: titulo, widget: string }
+                      - { label: Respuesta, name: descripcion, widget: text }

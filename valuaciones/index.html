@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valuación de arte y antigüedades en San Pedro Garza García y Monterrey | Casa Colección</title>
+  <meta name="description" content="Avalúos presenciales y digitales de arte y antigüedades por Ana Leticia Noyola Fernandez, perito valuador de Casa Colección. San Pedro, Monterrey y toda la República.">
+  <meta name="theme-color" content="#08111F">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { museo: '#08111F', museo2: '#101D35', marfil: '#FAF0E6', champagne: '#BFA678', bronce: '#8A6748', grafito: '#2F3136', oro: '#B08650' },
+          fontFamily: { display: ['"Cormorant Garamond"', 'serif'], serif2: ['"EB Garamond"', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #08111F; color: #FAF0E6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    .grain { background-image: radial-gradient(rgba(191,166,120,.05) 1px, transparent 1px); background-size: 4px 4px; }
+    .hairline { height: 1px; background: linear-gradient(90deg, transparent, #B08650, transparent); }
+    .btn-gold { background: #B08650; color: #08111F; transition: all .3s ease; }
+    .btn-gold:hover { background: #BFA678; transform: translateY(-1px); }
+    .btn-gold[disabled] { opacity: .6; cursor: wait; transform: none; }
+    .btn-line { border: 1px solid rgba(191,166,120,.6); color: #BFA678; transition: all .3s ease; }
+    .btn-line:hover { background: rgba(191,166,120,.12); border-color: #BFA678; }
+    .outline-text { color: transparent; -webkit-text-stroke: 1px rgba(191,166,120,.55); }
+    /* Slideshow */
+    .slide { display: none; }
+    .slide.active { display: grid; animation: fadeIn .8s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: none; } }
+    .thumb { opacity: .45; transition: all .3s ease; border: 1px solid transparent; }
+    .thumb.active, .thumb:hover { opacity: 1; border-color: #B08650; }
+    /* FAQ */
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .plus { transform: rotate(45deg); }
+    .plus { transition: transform .3s ease; }
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: all .9s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } .slide.active { animation: none; } html { scroll-behavior: auto; } }
+    /* Formularios */
+    .field { width: 100%; background: transparent; border-bottom: 1px solid rgba(138,103,72,.45); padding: .75rem 0; color: #08111F; outline: none; transition: border-color .2s; }
+    .field:focus { border-color: #B08650; }
+    .field::placeholder { color: rgba(47,49,54,.45); }
+    .lbl { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: #8A6748; }
+    .slot { position: relative; display: flex; min-height: 8.5rem; cursor: pointer; flex-direction: column; justify-content: flex-end; overflow: hidden; border: 1px dashed rgba(138,103,72,.6); padding: .75rem; background: rgba(191,166,120,.12); transition: all .2s; }
+    .slot:hover, .slot:focus-within { border-color: #B08650; background: rgba(191,166,120,.22); }
+    .slot.has-file { border-style: solid; border-color: #B08650; }
+    .slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9; }
+    .slot .st, .slot .sn { position: relative; z-index: 1; }
+    .slot .st { font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: #08111F; font-weight: 500; }
+    .slot .sn { font-size: 12px; color: #2F3136; margin-top: .15rem; word-break: break-all; }
+    .slot.has-file .st, .slot.has-file .sn { background: rgba(250,240,230,.92); padding: 0 .35rem; width: fit-content; max-width: 100%; }
+    .tabbtn[aria-selected="true"] { background: #08111F; color: #BFA678; }
+    input[type=file].sr { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; bottom: 0; left: 50%; }
+    dialog { border: 0; padding: 0; background: transparent; max-width: 92vw; }
+    dialog::backdrop { background: rgba(5,12,24,.78); backdrop-filter: blur(3px); }
+    :focus-visible { outline: 2px solid #B08650; outline-offset: 3px; }
+  </style>
+  <link rel="canonical" href="https://casacoleccion.mx/valuaciones/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Casa Colección">
+  <meta property="og:title" content="Valuación de arte y antigüedades en San Pedro Garza García y Monterrey | Casa Colección">
+  <meta property="og:description" content="Avalúos presenciales y digitales de arte y antigüedades por Ana Leticia Noyola Fernandez, perito valuador de Casa Colección. San Pedro, Monterrey y toda la República.">
+  <meta property="og:url" content="https://casacoleccion.mx/valuaciones/">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ArtGallery", "@id": "https://casacoleccion.mx/#casa-coleccion", "name": "Casa Colección", "alternateName": "Casa Colección Art & Antiques Gallery", "url": "https://casacoleccion.mx/", "telephone": "+528180805580", "foundingDate": "1971", "address": {"@type": "PostalAddress", "streetAddress": "Río Orinoco #484", "addressLocality": "San Pedro Garza García", "addressRegion": "Nuevo León", "addressCountry": "MX"}, "sameAs": ["https://www.instagram.com/casacoleccionmx"], "founder": {"@id": "https://casacoleccion.mx/valuaciones/#ana-leticia-noyola-fernandez"}}, {"@type": "Person", "@id": "https://casacoleccion.mx/valuaciones/#ana-leticia-noyola-fernandez", "name": "Ana Leticia Noyola Fernandez", "jobTitle": "Especialista en arte, antigüedades y valuaciones", "description": "Perito valuador de obras de arte y antigüedades, con más de 33 años de experiencia en el arte y 55 años de trayectoria familiar y empresarial en Casa Colección.", "worksFor": {"@id": "https://casacoleccion.mx/#casa-coleccion"}, "address": {"@type": "PostalAddress", "addressLocality": "San Pedro Garza García", "addressRegion": "Nuevo León", "addressCountry": "MX"}, "knowsAbout": ["Valuación de arte", "Valuación de antigüedades", "Pinturas", "Esculturas", "Muebles antiguos", "Porcelana", "Plata", "Bronce", "Arte moderno"]}, {"@type": "Service", "@id": "https://casacoleccion.mx/valuaciones/#servicio", "name": "Valuación de arte y antigüedades", "serviceType": "Valuación de arte y antigüedades", "provider": [{"@id": "https://casacoleccion.mx/valuaciones/#ana-leticia-noyola-fernandez"}, {"@id": "https://casacoleccion.mx/#casa-coleccion"}], "areaServed": [{"@type": "Country", "name": "México"}, {"@type": "City", "name": "Monterrey"}, {"@type": "City", "name": "San Pedro Garza García"}], "description": "Avalúos presenciales y digitales de pinturas, esculturas, muebles, porcelana, plata, bronce, arte moderno y antigüedades, para venta, aseguranza, inventario, sucesión, repartición de bienes o conocimiento personal.", "offers": {"@type": "Offer", "name": "Avalúo virtual con certificado", "price": "1200", "priceCurrency": "MXN", "url": "https://casacoleccion.mx/valuaciones/#solicitar"}}, {"@type": "WebPage", "@id": "https://casacoleccion.mx/valuaciones/", "url": "https://casacoleccion.mx/valuaciones/", "name": "Valuación de arte y antigüedades en Monterrey y San Pedro Garza García", "description": "Avalúos presenciales y digitales de arte y antigüedades por Ana Leticia Noyola Fernandez, perito valuador de Casa Colección. San Pedro, Monterrey y toda la República.", "inLanguage": "es-MX", "about": {"@id": "https://casacoleccion.mx/valuaciones/#servicio"}, "mainEntity": {"@id": "https://casacoleccion.mx/valuaciones/#ana-leticia-noyola-fernandez"}, "isPartOf": {"@type": "WebSite", "name": "Casa Colección", "url": "https://casacoleccion.mx/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://casacoleccion.mx/"}, {"@type": "ListItem", "position": 2, "name": "Valuaciones", "item": "https://casacoleccion.mx/valuaciones/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Quién realiza las valuaciones de Casa Colección?", "acceptedAnswer": {"@type": "Answer", "text": "Las realiza personalmente Ana Leticia Noyola Fernandez, perito valuador de obras de arte y antigüedades y especialista de Casa Colección, galería de San Pedro Garza García, Nuevo León."}}, {"@type": "Question", "name": "¿Cuánto cuesta y cuánto tarda un avalúo virtual?", "acceptedAnswer": {"@type": "Answer", "text": "El avalúo virtual cuesta $1,200 MXN y el certificado de valuación se entrega en 3 a 5 días hábiles, a partir de que recibimos tu información completa y se confirma tu pago."}}, {"@type": "Question", "name": "¿Qué necesito para solicitar una valuación digital?", "acceptedAnswer": {"@type": "Answer", "text": "Tus datos de contacto, una breve descripción de la pieza, 3 fotografías de buena calidad y con buena luz (frente, reverso o base y un detalle como firma, marca o sello) y, si la tienes, la papelería que acompaña a la pieza: facturas, certificados, avalúos previos o historia de procedencia."}}, {"@type": "Question", "name": "¿Valúan piezas fuera de Nuevo León?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Trabajamos en toda la República Mexicana mediante avalúos digitales y, según el caso, coordinamos avalúos presenciales."}}, {"@type": "Question", "name": "¿Para qué puedo usar el certificado de valuación?", "acceptedAnswer": {"@type": "Answer", "text": "Para vender con un precio fundamentado, asegurar tus piezas, hacer un inventario, apoyar una sucesión o la repartición de bienes, o simplemente conocer el valor de lo que tienes. Si tu aseguradora, notario o autoridad pide un formato específico, consúltanos antes de solicitar el avalúo."}}]}]}</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="key" viewBox="106.5 372.4 866.1 335.2"><path fill-rule="nonzero" fill="currentColor" d="M 936.933594 559.988281 L 936.933594 576.757812 L 952.519531 576.757812 L 952.519531 673.789062 L 905.761719 673.789062 L 906.957031 657.011719 C 914.683594 656.757812 922.902344 660.65625 929.335938 654.21875 C 935.925781 647.632812 931.328125 638.023438 932.234375 636.757812 C 932.539062 636.332031 939.25 635.027344 941.804688 632.539062 C 950.074219 624.488281 941.191406 612.996094 930.941406 613.882812 C 939.429688 596.652344 922.417969 586.558594 906.972656 593.527344 C 908.863281 564.054688 867.089844 564.527344 869.78125 593.527344 C 853.476562 587.601562 838.300781 594.664062 844.621094 613.886719 C 834.410156 613.15625 826.632812 624.84375 834.964844 632.519531 C 837.734375 635.066406 844.273438 636.289062 844.582031 636.710938 C 845.316406 637.722656 840.101562 648.507812 847.578125 654.65625 C 854.519531 660.363281 861.949219 657.1875 869.796875 657.011719 L 870.992188 673.789062 L 824.234375 673.789062 L 824.234375 576.757812 L 863.796875 576.757812 L 863.796875 573.164062 L 839.820312 573.164062 L 839.820312 559.988281 Z M 936.933594 559.988281 "/><path fill-rule="nonzero" fill="currentColor" d="M 555.667969 556.394531 L 555.667969 526.445312 L 766.085938 526.445312 C 770.390625 534.90625 769.875 547.910156 766.085938 556.394531 Z M 555.667969 556.394531 "/><path fill-rule="nonzero" fill="currentColor" d="M 944.128906 556.394531 L 796.65625 556.394531 L 796.65625 526.445312 L 944.128906 526.445312 Z M 944.128906 556.394531 "/><path fill-rule="nonzero" fill="currentColor" d="M 305.089844 524.050781 C 295.609375 512.269531 295.117188 500.171875 304.59375 488.214844 C 305.476562 487.101562 310.988281 480.683594 312.277344 482.128906 C 311.066406 491.511719 314.730469 500.695312 321.230469 507.324219 C 325.914062 512.101562 340.898438 526.351562 345.960938 529.332031 C 349.0625 531.15625 358.929688 533.6875 359.113281 534.367188 C 359.394531 535.398438 359.324219 546.226562 358.921875 546.695312 C 358.410156 547.292969 347.457031 549.511719 343.839844 551.386719 C 329 559.070312 310.648438 577.816406 312.277344 595.917969 C 310.933594 597.488281 303.875 589.285156 302.898438 587.933594 C 293.175781 574.480469 297.015625 563.917969 306.289062 551.613281 C 301.820312 551.960938 298.148438 554.535156 293.570312 555.054688 C 276.363281 557.011719 268.855469 540.738281 252.34375 538.410156 L 264.753906 533.460938 C 282.5625 525.242188 279.878906 519.683594 302.691406 525.246094 C 304.011719 524.859375 305.3125 525.28125 306.566406 525.714844 C 306.695312 525.757812 304.007812 525.371094 305.089844 524.050781 "/><path fill-rule="nonzero" fill="currentColor" d="M 278.710938 664.207031 C 279.492188 666.640625 281.855469 671.433594 283.484375 673.210938 C 290.9375 681.355469 318.449219 677.824219 329.066406 677.394531 C 325.855469 679.429688 323.25 690.265625 321.894531 691.179688 C 312.519531 697.476562 276.148438 688.3125 265.226562 684.269531 C 223.773438 668.914062 183.996094 622.761719 190.09375 576.261719 C 192.976562 554.238281 218.957031 537.546875 239.066406 551.082031 C 254.941406 561.769531 251.105469 587.648438 231.5 586.292969 C 216.488281 585.253906 219.5625 564.175781 228.351562 568.898438 C 229.941406 569.757812 233.429688 578.402344 235.351562 572.375 C 239.773438 558.523438 216.9375 552.804688 207.742188 567.542969 C 199.683594 580.464844 203.507812 596.117188 208.277344 609.398438 C 218.574219 638.070312 242.65625 659.746094 270.308594 671.394531 C 269.144531 666.324219 268.753906 663.351562 271.285156 658.578125 C 272.136719 656.972656 277.324219 650.398438 278.710938 654.625 C 277.699219 657.769531 277.964844 661.023438 278.710938 664.207031 "/><path fill-rule="nonzero" fill="currentColor" d="M 320.675781 403.058594 C 313.816406 403.144531 289.832031 402.621094 285.035156 405.785156 C 281.113281 408.367188 275.730469 424.34375 278.699219 429.414062 C 268.871094 425.085938 266.851562 417.3125 273.917969 409.0625 C 242.179688 418.011719 210.875 447.570312 204.703125 480.652344 C 202.78125 490.96875 203.042969 507.320312 212.828125 513.808594 C 218.332031 517.453125 227.96875 518.527344 233.085938 513.800781 C 240.828125 506.644531 233.371094 497.089844 231.960938 500.722656 C 228.222656 519.460938 212.433594 497.925781 226.710938 490.660156 C 246.613281 480.542969 260.535156 513.113281 237.203125 525.105469 C 207.390625 540.421875 187.347656 510.808594 190.136719 482.867188 C 196.011719 423.972656 265.230469 382.351562 321.082031 388.632812 C 323.347656 393.902344 324.585938 397.140625 327.867188 401.863281 C 328.664062 404.625 322.933594 404.023438 320.675781 403.058594 "/><path fill-rule="nonzero" fill="currentColor" d="M 330.261719 706.128906 C 322.476562 704.183594 325.476562 692.699219 327.644531 687.339844 C 334.457031 670.535156 354.085938 670.042969 367.796875 661.574219 C 379.871094 654.113281 395.371094 637.308594 397.304688 622.777344 C 399.789062 604.136719 390.128906 581.679688 367.980469 588.695312 C 359.089844 591.511719 356.03125 604.957031 366.21875 607.902344 C 366.902344 599.617188 378.078125 599.277344 378.324219 608.546875 C 378.757812 624.914062 347.496094 623.476562 346.953125 601.316406 C 346.183594 569.847656 394.992188 565.699219 407.054688 597.664062 C 420.132812 632.316406 395.808594 665.042969 365.464844 679.609375 C 351.84375 686.144531 330.585938 686.597656 330.261719 706.128906 "/><path fill-rule="nonzero" fill="currentColor" d="M 330.261719 374.308594 C 329.402344 394.433594 355.503906 395.773438 369.851562 403.636719 C 397.292969 418.679688 418.226562 449.96875 407.332031 481.855469 C 401.535156 498.832031 383.972656 508.417969 366.457031 504.0625 C 351.964844 500.457031 342.269531 483.125 350.847656 469.746094 C 360.648438 454.460938 385.71875 465.398438 376.933594 477.839844 C 372.070312 484.722656 367.285156 474.996094 366.644531 474.855469 C 356.785156 472.714844 358.554688 490.164062 369.484375 492.652344 C 383.027344 495.730469 395.519531 486.535156 397.304688 473.035156 C 400.222656 450.96875 384.578125 429.785156 366.257812 419.210938 C 351.367188 410.617188 326.652344 409.070312 325.414062 386.929688 C 325.222656 383.4375 325.410156 374.402344 330.261719 374.308594 "/><path fill-rule="nonzero" fill="currentColor" d="M 144.417969 567.171875 C 134.453125 563.871094 135.03125 553.757812 138.429688 545.617188 C 126.902344 550.238281 117.445312 544.777344 108.484375 537.828125 C 117.722656 531.078125 128.050781 523.554688 139.621094 530.039062 C 139.761719 526.972656 136.90625 524.863281 136.304688 521.976562 C 134.769531 514.578125 138.578125 509.484375 143.835938 504.890625 C 144.46875 515.496094 154.113281 529.65625 164.792969 531.914062 C 167.941406 532.578125 180.503906 527.125 185.9375 526.59375 C 198.621094 525.363281 214.789062 529.714844 224.738281 537.828125 C 214.761719 546.222656 195.152344 549.601562 182.300781 547.90625 C 169.550781 546.222656 169.296875 537.871094 155.546875 547.734375 C 148.417969 552.851562 145.859375 558.628906 144.417969 567.171875 "/><path fill-rule="nonzero" fill="currentColor" d="M 531.929688 562.617188 C 531.253906 563.378906 532.113281 565.917969 530.515625 567.789062 C 527.765625 571.019531 520.867188 571.300781 517.332031 568.914062 C 515.628906 567.765625 515.34375 565.554688 514.589844 565.09375 C 512.242188 563.644531 509.238281 566.023438 507.980469 560.316406 C 507.164062 556.613281 507.027344 524.3125 507.941406 521.285156 C 508.378906 519.835938 518.769531 512.703125 520.566406 512.300781 C 528.894531 510.441406 529.019531 514.445312 532.40625 519.140625 C 533.382812 520.496094 535.722656 520.792969 536.300781 522.4375 C 536.914062 524.183594 537.0625 556.730469 536.507812 559.40625 C 535.714844 563.25 532.785156 561.648438 531.929688 562.617188 "/><path fill-rule="nonzero" fill="currentColor" d="M 462.15625 559.976562 C 461.796875 560.355469 454.085938 561.515625 451.914062 562.335938 C 436.40625 568.207031 424.28125 586.054688 423.875 602.703125 C 423.828125 604.5625 425.609375 615.71875 426.199219 616.285156 C 428.300781 618.304688 429.382812 612.835938 430.953125 612.070312 C 441.441406 606.945312 446.5625 625.027344 434.609375 627.683594 C 419.585938 631.027344 412.496094 613.601562 411.800781 601.285156 C 410.414062 576.710938 429.148438 551.820312 454.386719 550.414062 C 464.257812 549.867188 460.710938 551.035156 460.988281 556.84375 C 461.039062 557.925781 462.394531 559.730469 462.15625 559.976562 "/><path fill-rule="nonzero" fill="currentColor" d="M 462.148438 521.660156 C 461.148438 523.277344 461.230469 529.71875 460.941406 530.027344 C 460.554688 530.4375 451.46875 530.121094 449.691406 529.910156 C 425.6875 527.0625 410.046875 502.339844 411.953125 479.28125 C 412.902344 467.777344 420.964844 448.371094 435.46875 454.285156 C 449.777344 460.121094 436.417969 481.378906 426.78125 466.574219 C 416.375 489.40625 436.445312 521.34375 462.148438 521.660156 "/><path fill-rule="nonzero" fill="currentColor" d="M 462.152344 533.632812 L 462.152344 546.808594 L 433.976562 546.808594 C 430.496094 546.808594 426.15625 541.597656 424.378906 540.824219 C 423.960938 540.640625 422.488281 545.253906 420.265625 545.09375 C 404.675781 547.554688 389.105469 545.308594 373.421875 544.421875 C 373.714844 541.671875 372.132812 536.308594 375.371094 535.109375 C 376.152344 534.820312 389.738281 533.695312 391.960938 533.582031 C 398.441406 533.253906 414.285156 532.71875 419.679688 534.730469 C 421.609375 535.449219 423.59375 538.03125 424.367188 538.101562 C 425.371094 538.1875 432.789062 533.632812 435.175781 533.632812 Z M 462.152344 533.632812 "/><path fill-rule="nonzero" fill="currentColor" d="M 317.078125 425.820312 C 314.882812 433.726562 306.933594 431.667969 300.285156 433.597656 C 287.699219 437.253906 284.484375 443.859375 275.117188 447.984375 C 269.085938 450.640625 258.335938 450.171875 255.257812 452.101562 C 247.65625 456.867188 256.550781 484.472656 239.15625 481.535156 C 244.070312 475.175781 242.003906 467.175781 242.878906 460.097656 C 243.488281 455.179688 245.382812 453.640625 246.90625 449.882812 C 247.292969 448.929688 246.058594 447.105469 246.5 446.429688 C 248.679688 443.101562 261.898438 440.355469 265.855469 438.730469 C 272.691406 435.925781 292.582031 425.820312 298.496094 425.820312 Z M 317.078125 425.820312 "/><path fill-rule="nonzero" fill="currentColor" d="M 248.742188 624.667969 C 271.183594 624.039062 280.824219 642.582031 302.679688 648.046875 C 304.695312 648.550781 321.503906 649.933594 318.273438 653.417969 C 306.332031 657.410156 293.988281 655.109375 282.6875 650.050781 C 268.640625 643.757812 257.472656 629.152344 240.347656 631.851562 C 240.9375 629.625 243.703125 627.644531 243.816406 625.339844 C 243.992188 621.714844 243.082031 610.289062 242.609375 606.242188 C 242.191406 602.632812 240.878906 599.097656 239.148438 595.9375 C 253.625 597.578125 253.804688 613.625 248.742188 624.667969 "/><path fill-rule="nonzero" fill="currentColor" d="M 467.261719 519.5625 C 471.636719 514.914062 482.429688 516.726562 483.703125 523.480469 C 484.53125 527.890625 484.421875 554.855469 483.472656 559.128906 C 481.492188 568.058594 467.351562 567.691406 465.777344 559.359375 C 464.660156 553.433594 465.125 532.519531 465.699219 525.796875 C 465.867188 523.820312 465.855469 521.054688 467.261719 519.5625 "/><path fill-rule="nonzero" fill="currentColor" d="M 960.914062 528.839844 L 962.273438 529.480469 C 961.75 534.417969 961.292969 539.394531 960.914062 544.414062 C 962.0625 547.710938 962.0625 550.503906 960.914062 552.800781 C 959.996094 559.574219 952.40625 569.535156 948.320312 561.1875 C 946.621094 557.714844 947.832031 536.382812 947.78125 530.589844 C 947.742188 526.585938 944.949219 523.421875 948.980469 519.910156 C 955.511719 514.214844 960.179688 522.820312 960.914062 528.839844 "/><path fill-rule="nonzero" fill="currentColor" d="M 540.082031 519.855469 C 541.15625 516.398438 549.824219 517.1875 551.53125 522.792969 C 552.652344 526.480469 552.714844 556.457031 551.542969 560.058594 C 549.425781 566.566406 540.082031 565.085938 540.082031 561.785156 Z M 540.082031 519.855469 "/><path fill-rule="nonzero" fill="currentColor" d="M 786.652344 517.125 C 791.585938 516.675781 792.785156 522.175781 793.117188 525.792969 C 793.769531 532.945312 794.082031 552.679688 792.992188 559.320312 C 792.191406 564.183594 788.84375 567.78125 784.003906 564.851562 C 778.964844 561.796875 783.257812 551.644531 783.527344 546.269531 C 783.695312 542.859375 783.632812 538.871094 783.449219 535.449219 C 783.183594 530.472656 777.78125 517.925781 786.652344 517.125 "/><path fill-rule="nonzero" fill="currentColor" d="M 369.820312 444.988281 C 366.484375 441.476562 356.738281 442.515625 352.679688 444.023438 C 349.367188 445.25 348.140625 452.957031 344.667969 454.566406 C 342.820312 449.257812 341.691406 445.8125 343.449219 440.203125 C 340.105469 440.851562 338.085938 443.207031 334.28125 443.359375 C 329.503906 443.554688 322.460938 440.464844 317.085938 440.800781 C 323.507812 433.042969 332.921875 430.03125 342.539062 433.316406 C 344.257812 433.90625 345.375 436.105469 346.617188 436.371094 C 348.367188 436.742188 351.351562 434.394531 353.746094 434.265625 C 358.496094 434.011719 369.054688 439.382812 369.820312 444.988281 "/><path fill-rule="nonzero" fill="currentColor" d="M 347.035156 629.46875 C 350.09375 642.195312 359.109375 642.375 369.824219 637.859375 C 367.535156 644.625 360.476562 648.652344 353.644531 648.746094 C 346.828125 648.839844 345.769531 648.945312 339.164062 649.730469 C 330.722656 650.738281 323.917969 648.328125 318.28125 642.039062 C 326.898438 640.429688 333.78125 636.898438 342.25 641.441406 C 341.46875 639.636719 344.195312 626.765625 347.035156 629.46875 "/><path fill-rule="nonzero" fill="currentColor" d="M 416.585938 562.375 C 412.511719 562.796875 409.203125 562.25 405.8125 559.988281 C 406.242188 561.746094 403.84375 570.820312 402.722656 570.8125 C 397.609375 569.988281 395.667969 564.828125 396.195312 559.988281 C 393.796875 561.054688 390.21875 562.132812 387.824219 560.59375 C 392.304688 551.222656 399.53125 546.023438 409.441406 550.964844 Z M 416.585938 562.375 "/><path fill-rule="nonzero" fill="currentColor" d="M 777.363281 521.777344 C 780.242188 524.179688 780.554688 556.242188 777.609375 560.488281 C 776.546875 562.015625 771.78125 561.414062 770.78125 560.0625 C 769.367188 558.148438 772.78125 545.136719 772.78125 541.417969 C 772.78125 537.308594 768.257812 523.148438 772.265625 521.839844 C 773.300781 521.5 776.773438 521.289062 777.363281 521.777344 "/><path fill-rule="nonzero" fill="currentColor" d="M 403.386719 509.679688 C 404.375 513.355469 406.550781 516.398438 405.8125 520.457031 C 409.375 517.871094 412.710938 517.632812 416.585938 519.851562 C 409.957031 531.488281 392.011719 534.03125 387.820312 519.265625 C 400.226562 522.429688 394.277344 512.089844 403.386719 509.679688 "/><path fill-rule="nonzero" fill="currentColor" d="M 487.328125 523.449219 C 488.203125 520.542969 494.523438 521.496094 494.523438 523.449219 L 494.523438 558.191406 C 494.523438 560.550781 487.328125 562.558594 487.328125 559.390625 C 487.328125 552.238281 485.898438 528.207031 487.328125 523.449219 "/><path fill-rule="nonzero" fill="currentColor" d="M 504.113281 559.988281 C 503.039062 561.578125 496.921875 560.558594 496.921875 558.191406 L 496.921875 523.453125 C 496.921875 521.070312 504.113281 521.074219 504.113281 523.453125 C 504.113281 528.375 505.136719 558.472656 504.113281 559.988281 "/><path fill-rule="nonzero" fill="currentColor" d="M 195.976562 551.613281 C 196.082031 553.453125 193.636719 553.089844 192.359375 554.5625 C 188.859375 558.589844 182.46875 573.667969 181.539062 574.3125 C 177.324219 577.230469 168.496094 564.625 176.777344 555.769531 C 181.757812 550.441406 189.410156 551.582031 195.976562 551.613281 "/><path fill-rule="nonzero" fill="currentColor" d="M 195.984375 522.839844 C 188.242188 522.78125 182.929688 524.535156 177.367188 518.09375 C 171.476562 511.273438 171.164062 502.476562 180.414062 499.449219 C 184.464844 508.679688 188.632812 515.828125 195.984375 522.839844 "/><path fill-rule="nonzero" fill="currentColor" d="M 363.855469 524.054688 C 368.105469 521.269531 370.707031 531.324219 371.035156 534.226562 C 371.4375 537.820312 370.726562 555.5 366.820312 556.390625 C 359.035156 558.160156 361.75 525.433594 363.855469 524.054688 "/><path fill-rule="nonzero" fill="currentColor" d="M 964.511719 530.039062 C 974.199219 536.109375 971.695312 545.695312 963.3125 551.601562 C 960.789062 552.511719 961.058594 546.242188 962.113281 544.414062 C 961.460938 543.042969 961.074219 530.289062 961.527344 529.558594 Z M 964.511719 530.039062 "/><path fill-rule="nonzero" fill="currentColor" d="M 332.671875 423.417969 C 334.84375 418.449219 335.097656 414.367188 335.652344 409.058594 C 346.921875 412.769531 341.402344 421.160156 332.671875 423.417969 "/><path fill-rule="nonzero" fill="currentColor" d="M 342.097656 670.054688 C 341.898438 670.371094 335.414062 672.976562 335.070312 672.585938 C 337.015625 669.695312 332.175781 659.882812 332.671875 659.421875 C 334.726562 657.492188 344.582031 666.132812 342.097656 670.054688 "/><path fill-rule="nonzero" fill="currentColor" d="M 964.511719 530.039062 C 963.839844 530.144531 962.261719 529.832031 962.113281 530.03125 C 961.683594 530.605469 962.085938 542.136719 962.113281 544.414062 C 961.773438 545.460938 961.371094 545.445312 960.914062 544.414062 C 961.082031 539.828125 961.445312 533.191406 960.914062 528.839844 C 962.726562 528.40625 963.316406 529.292969 964.511719 530.039062 "/><path fill-rule="nonzero" fill="currentColor" d="M 963.3125 551.601562 C 962.546875 552.140625 962.023438 552.878906 960.914062 552.800781 C 961.253906 550.273438 960.816406 547.105469 960.914062 544.414062 L 962.113281 544.414062 C 962.140625 546.675781 961.300781 550.300781 963.3125 551.601562 "/><path fill-rule="nonzero" fill="currentColor" d="M 278.710938 664.207031 C 277.78125 661.308594 275.824219 657.480469 278.710938 654.625 C 279.40625 656.742188 278.230469 661.585938 278.710938 664.207031 "/><path fill-rule="nonzero" fill="currentColor" d="M 327.867188 401.863281 C 328.019531 402.074219 328.894531 402.011719 329.058594 402.460938 L 329.0625 404.253906 C 326.433594 403.960938 322.363281 405.34375 320.675781 403.058594 C 322.9375 403.03125 326.566406 403.871094 327.867188 401.863281 "/><path fill-rule="nonzero" fill="currentColor" d="M 305.089844 524.050781 C 305.601562 524.6875 307.609375 524.988281 307.488281 526.433594 C 305.375 527.269531 303.859375 525.53125 302.691406 525.246094 Z M 305.089844 524.050781 "/></symbol>
+  </svg>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header id="top" class="fixed inset-x-0 top-0 z-40 transition-all duration-500">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+      <a href="/" class="flex items-center gap-3" aria-label="Casa Colección, inicio">
+        <span class="flex flex-col"><span class="font-display text-base font-medium leading-tight tracking-[.2em] text-champagne sm:text-xl sm:tracking-[.28em]">CASA COLECCION</span><span class="mt-0.5 text-[8px] uppercase tracking-[.22em] text-marfil/55 sm:text-[9px] sm:tracking-[.3em]">Ana Leticia Noyola Fernandez</span></span>
+      </a>
+      <nav class="hidden items-center gap-8 text-[11px] uppercase tracking-[.22em] text-marfil/80 lg:flex" aria-label="Principal">
+        <a class="transition hover:text-oro" href="/#nosotros">Nosotros</a>
+        <a class="transition hover:text-oro" href="/#servicios">Servicios</a>
+        <a class="transition hover:text-oro" href="/valuaciones/">Valuaciones</a>
+        <a class="transition hover:text-oro" href="/#coleccion">Colección</a>
+        <a class="transition hover:text-oro" href="/#faq">Preguntas</a>
+        <a class="btn-line px-5 py-2.5" href="/#contacto">Contacto</a>
+      </nav>
+      <button id="menuBtn" class="p-2 text-champagne lg:hidden" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-oro/20 bg-museo/95 px-5 py-6 backdrop-blur lg:hidden">
+      <div class="flex flex-col gap-5 text-xs uppercase tracking-[.25em] text-marfil/90">
+        <a href="/#nosotros">Nosotros</a><a href="/#servicios">Servicios</a><a href="/valuaciones/">Valuaciones</a><a href="/#coleccion">Colección</a><a href="/#faq">Preguntas frecuentes</a><a href="/#contacto" class="text-oro">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Encabezado de la página ===== -->
+    <section class="grain relative overflow-hidden bg-museo">
+      <div class="relative mx-auto max-w-4xl px-8 pb-20 pt-40 text-center sm:px-14 sm:pb-24">
+        <nav aria-label="Ruta de navegación" class="text-[11px] uppercase tracking-[.25em] text-marfil/50"><a class="hover:text-oro" href="/">Inicio</a> <span class="mx-2 text-oro/60">/</span> <span class="text-oro">Valuaciones</span></nav>
+        <p class="mt-8 text-[10px] uppercase tracking-[.45em] text-oro sm:text-[11px]">Valuaciones · Casa Colección</p>
+        <h1 class="mt-6 font-display text-[clamp(2.2rem,5vw,3.9rem)] font-normal leading-[1.1] text-marfil">Valuación de arte y antigüedades en Monterrey y San Pedro Garza García</h1>
+        <div class="mx-auto mt-8 hairline w-40"></div>
+        <p data-txt="pagina_valuaciones.intro" data-rich class="mx-auto mt-8 max-w-2xl font-serif2 text-lg leading-relaxed text-marfil/80 sm:text-xl">Avalúos profesionales de pinturas, esculturas, muebles, porcelana, plata, bronce, arte moderno y antigüedades, realizados personalmente por <strong class="font-medium text-champagne">Ana Leticia Noyola Fernandez</strong>, especialista en arte, antigüedades y valuaciones de Casa Colección. Presenciales en Monterrey y San Pedro Garza García, y digitales en toda la República Mexicana.</p>
+        <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+          <a href="#solicitar" class="btn-gold px-9 py-4 text-center text-[11px] font-medium uppercase tracking-[.25em]">Solicitar avalúo virtual</a>
+          <a href="https://wa.me/528180805580?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20valuaci%C3%B3n%20de%20arte%20o%20antig%C3%BCedades." data-wa data-wa-text="Hola, quiero información sobre una valuación de arte o antigüedades." target="_blank" rel="noopener" class="btn-line px-9 py-4 text-center text-[11px] uppercase tracking-[.25em]">Escríbenos por WhatsApp</a>
+        </div>
+        <ul class="mx-auto mt-14 grid max-w-3xl gap-6 border-t border-oro/25 pt-8 text-center sm:grid-cols-3 sm:gap-0">
+          <li class="sm:px-4"><p class="font-display text-xl text-marfil" data-txt="pagina_valuaciones.chips.0.titulo">Presencial y digital</p><p class="mt-1 text-xs text-marfil/55" data-txt="pagina_valuaciones.chips.0.texto">Avalúos en persona o a distancia</p></li>
+          <li class="sm:border-x sm:border-oro/25 sm:px-4"><p class="font-display text-xl text-marfil" data-txt="pagina_valuaciones.chips.1.titulo">Toda la República</p><p class="mt-1 text-xs text-marfil/55" data-txt="pagina_valuaciones.chips.1.texto">Trabajamos en todo México</p></li>
+          <li class="sm:px-4"><p class="font-display text-xl text-marfil" data-txt="pagina_valuaciones.chips.2.titulo">Certificado en 3 a 5 días hábiles</p><p class="mt-1 text-xs text-marfil/55" data-txt="pagina_valuaciones.chips.2.texto">En avalúos virtuales</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Quién realiza las valuaciones ===== -->
+    <section id="quien" class="bg-marfil py-24 text-museo sm:py-28">
+      <div class="mx-auto grid max-w-6xl gap-14 px-6 sm:px-8 lg:grid-cols-12">
+        <div class="reveal lg:col-span-5">
+          <p class="mb-4 text-[11px] uppercase tracking-[.4em] text-bronce">Quién realiza las valuaciones</p>
+          <aside class="bg-museo p-8 text-marfil sm:p-10" aria-label="Ficha profesional">
+            <svg class="h-8 w-20 text-oro" aria-hidden="true"><use href="#key"/></svg>
+            <h2 class="mt-6 font-display text-3xl leading-tight text-champagne sm:text-4xl">Ana Leticia Noyola Fernandez</h2>
+            <p class="mt-3 font-serif2 text-lg text-marfil/85" data-txt="pagina_valuaciones.quien.cargo">Especialista en arte, antigüedades y valuaciones</p>
+            <div class="my-6 hairline"></div>
+            <p class="text-sm leading-relaxed text-marfil/70" data-txt="pagina_valuaciones.quien.ficha" data-rich>Perito valuador de obras de arte y antigüedades<br>Casa Colección · Art &amp; Antiques Gallery<br>San Pedro Garza García, Nuevo León, México.</p>
+          </aside>
+        </div>
+        <div class="reveal lg:col-span-7">
+          <h2 class="font-display text-4xl font-medium leading-tight sm:text-5xl"><span data-txt="pagina_valuaciones.quien.titulo">Una sola especialista,</span> <span class="italic text-bronce" data-txt="pagina_valuaciones.quien.titulo_cursiva">toda una vida entre arte e historia</span></h2>
+          <p data-txt="pagina_valuaciones.quien.parrafo1" data-rich class="mt-8 font-serif2 text-xl leading-relaxed text-grafito">Cada valuación de Casa Colección la realiza personalmente <strong class="font-medium">Ana Leticia Noyola Fernandez</strong>, perito valuador de obras de arte y antigüedades. Tu pieza no pasa por un equipo desconocido: la revisa y la certifica la misma especialista.</p>
+          <p data-txt="pagina_valuaciones.quien.parrafo2" data-rich class="mt-5 leading-relaxed text-grafito/80">Ana Leticia Noyola Fernandez suma más de 33 años de trabajo en el arte y 40 años recorriendo el mundo en busca de piezas extraordinarias, y se respalda en los 55 años de experiencia familiar y empresarial de Casa Colección, galería que crea colecciones desde 1971 en San Pedro Garza García, Nuevo León.</p>
+          <dl class="mt-10 grid grid-cols-3 gap-6 border-t border-bronce/30 pt-8">
+            <div><dt class="font-display text-4xl text-bronce" data-txt="pagina_valuaciones.quien.stats.0.numero">55</dt><dd class="mt-1 text-[11px] uppercase tracking-[.18em] text-grafito/70" data-txt="pagina_valuaciones.quien.stats.0.texto">Años de experiencia familiar y empresarial</dd></div>
+            <div><dt class="font-display text-4xl text-bronce" data-txt="pagina_valuaciones.quien.stats.1.numero">33+</dt><dd class="mt-1 text-[11px] uppercase tracking-[.18em] text-grafito/70" data-txt="pagina_valuaciones.quien.stats.1.texto">Años en el arte</dd></div>
+            <div><dt class="font-display text-4xl text-bronce" data-txt="pagina_valuaciones.quien.stats.2.numero">40</dt><dd class="mt-1 text-[11px] uppercase tracking-[.18em] text-grafito/70" data-txt="pagina_valuaciones.quien.stats.2.texto">Años viajando por el mundo</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Qué valuamos ===== -->
+    <section id="que-valuamos" class="grain bg-museo py-24 sm:py-28">
+      <div class="mx-auto max-w-6xl px-6 sm:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="mb-4 text-[11px] uppercase tracking-[.4em] text-oro">Qué valuamos</p>
+          <h2 class="font-display text-4xl font-medium sm:text-5xl" data-txt="pagina_valuaciones.objetos.titulo">Arte y antigüedades de todo tipo</h2>
+          <div class="mx-auto mt-8 hairline w-40"></div>
+        </div>
+        <ul class="reveal mt-14 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4" data-list="pagina_valuaciones.objetos.lista" data-list-type="dark">
+          <li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Pinturas</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Óleos, acuarelas, grabados y obra sobre papel o tela, antiguos y modernos.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Esculturas</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Piezas en madera, piedra, mármol y otros materiales, de distintas épocas y culturas.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Muebles</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Mobiliario antiguo y de colección: cómodas, sillería, mesas y vitrinas.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Porcelana y cerámica</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Vajillas, jarrones, figuras y piezas decorativas.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Plata</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Orfebrería, cubiertos, charolas, servicios y objetos en plata.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Bronce</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Esculturas, lámparas y objetos decorativos en bronce.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Arte moderno</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Obra gráfica y pintura moderna y contemporánea.</p></li><li class="border-t border-oro/30 pt-5"><h3 class="font-display text-2xl text-marfil">Antigüedades y objetos de colección</h3><p class="mt-2 text-sm leading-relaxed text-marfil/65">Relojes, cristalería y objetos con historia, entre muchos otros.</p></li>
+        </ul>
+        <p class="reveal mt-12 text-center font-serif2 text-lg italic text-marfil/70" data-txt="pagina_valuaciones.objetos.nota">¿No ves tu pieza en la lista? Consúltanos: valuamos muchas más categorías.</p>
+      </div>
+    </section>
+
+    <!-- ===== Para qué se solicita ===== -->
+    <section id="para-que" class="bg-marfil py-24 text-museo sm:py-28">
+      <div class="mx-auto max-w-6xl px-6 sm:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="mb-4 text-[11px] uppercase tracking-[.4em] text-bronce">Para qué solicitarla</p>
+          <h2 class="font-display text-4xl font-medium sm:text-5xl" data-txt="pagina_valuaciones.para_que.titulo">Un avalúo para cada necesidad</h2>
+          <div class="mx-auto mt-8 hairline w-40"></div>
+        </div>
+        <ul class="reveal mt-14 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3" data-list="pagina_valuaciones.para_que.lista" data-list-type="light">
+          <li class="border-t border-bronce/40 pt-5"><h3 class="font-display text-2xl text-museo">Venta</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Conoce el valor real de tu pieza para fijar un precio justo.</p></li><li class="border-t border-bronce/40 pt-5"><h3 class="font-display text-2xl text-museo">Aseguranza</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Respaldo del valor de tus piezas o colección para asegurarlas.</p></li><li class="border-t border-bronce/40 pt-5"><h3 class="font-display text-2xl text-museo">Inventario</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Un registro ordenado y valuado de tus bienes de arte y antigüedades.</p></li><li class="border-t border-bronce/40 pt-5"><h3 class="font-display text-2xl text-museo">Sucesión</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Valor fundamentado de las piezas dentro de una herencia o sucesión.</p></li><li class="border-t border-bronce/40 pt-5"><h3 class="font-display text-2xl text-museo">Repartición de bienes</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Valores claros para repartir piezas entre herederos o familiares.</p></li><li class="border-t border-bronce/40 pt-5"><h3 class="font-display text-2xl text-museo">Conocimiento personal</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Saber qué tienes: su época, su origen y cuánto vale.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Presencial y digital ===== -->
+    <section id="modalidades" class="grain bg-museo py-24 sm:py-28">
+      <div class="mx-auto max-w-6xl px-6 sm:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="mb-4 text-[11px] uppercase tracking-[.4em] text-oro">Modalidades</p>
+          <h2 class="font-display text-4xl font-medium sm:text-5xl" data-txt="pagina_valuaciones.modalidades.titulo">Avalúos presenciales y digitales</h2>
+          <div class="mx-auto mt-8 hairline w-40"></div>
+        </div>
+        <div class="reveal mt-14 grid gap-6 md:grid-cols-2">
+          <article class="border border-oro/25 bg-museo2/40 p-8 sm:p-10">
+            <p class="text-[11px] uppercase tracking-[.3em] text-oro">Presencial</p>
+            <h3 class="mt-3 font-display text-3xl text-marfil">Valuación en persona</h3>
+            <p class="mt-4 text-sm leading-relaxed text-marfil/70">Revisamos la pieza o la colección directamente, previa cita, en Monterrey y San Pedro Garza García. Es la mejor opción para colecciones completas, piezas de gran formato o inventarios detallados. La cotización depende de cada caso: llámanos al <a class="text-champagne hover:underline" data-tel data-txt="contacto.telefono" href="tel:+528180805580">81 8080 5580</a>.</p>
+          </article>
+          <article class="border border-oro/25 bg-museo2/40 p-8 sm:p-10">
+            <p class="text-[11px] uppercase tracking-[.3em] text-oro">Digital</p>
+            <h3 class="mt-3 font-display text-3xl text-marfil">Avalúo virtual con certificado</h3>
+            <p class="mt-4 text-sm leading-relaxed text-marfil/70">A partir de fotografías y papelería que nos envías en línea. Recibes tu certificado de valuación en <span class="text-champagne" data-txt="valuacion.tiempo_entrega">3 a 5 días hábiles</span>. Costo: <span class="text-champagne" data-txt="valuacion.precio">$1,200 MXN</span>.</p>
+            <a href="#solicitar" class="mt-6 inline-block border-b border-oro pb-0.5 text-sm text-champagne hover:text-marfil">Solicitar avalúo virtual →</a>
+          </article>
+        </div>
+        <p class="reveal mt-10 text-center font-display text-2xl text-champagne sm:text-3xl" data-txt="pagina_valuaciones.modalidades.cobertura">Trabajamos en toda la República Mexicana.</p>
+      </div>
+    </section>
+
+    <!-- ===== Cómo funciona ===== -->
+    <section id="como-funciona" class="bg-marfil py-24 text-museo sm:py-28">
+      <div class="mx-auto max-w-6xl px-6 sm:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="mb-4 text-[11px] uppercase tracking-[.4em] text-bronce">Avalúo virtual</p>
+          <h2 class="font-display text-4xl font-medium sm:text-5xl" data-txt="pagina_valuaciones.pasos.titulo">Cómo funciona, paso a paso</h2>
+          <div class="mx-auto mt-8 hairline w-40"></div>
+        </div>
+        <ol class="reveal mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4" data-list="pagina_valuaciones.pasos.lista" data-list-type="steps">
+          <li class="border-t border-bronce/40 pt-5"><span class="font-display text-4xl text-bronce">1</span><h3 class="mt-2 font-display text-2xl text-museo">Envía tu información</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Llena el formulario con tus datos, una breve descripción, 3 fotografías y la papelería de la pieza.</p></li><li class="border-t border-bronce/40 pt-5"><span class="font-display text-4xl text-bronce">2</span><h3 class="mt-2 font-display text-2xl text-museo">Realiza tu pago</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">El avalúo virtual cuesta $1,200 MXN y se paga en línea con Mercado Pago.</p></li><li class="border-t border-bronce/40 pt-5"><span class="font-display text-4xl text-bronce">3</span><h3 class="mt-2 font-display text-2xl text-museo">Revisión por la perito valuadora</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Ana Leticia Noyola Fernandez analiza tu pieza: autenticidad, época, materiales, estado y mercado.</p></li><li class="border-t border-bronce/40 pt-5"><span class="font-display text-4xl text-bronce">4</span><h3 class="mt-2 font-display text-2xl text-museo">Recibe tu certificado</h3><p class="mt-2 text-sm leading-relaxed text-grafito/75">Te entregamos tu certificado de valuación en 3 a 5 días hábiles.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Formulario ===== -->
+    <section id="solicitar" class="grain scroll-mt-20 bg-museo py-24 sm:py-28">
+      <div class="mx-auto max-w-5xl px-6 sm:px-8">
+        <div class="reveal bg-marfil p-6 text-museo sm:p-10 lg:p-14">
+          <div id="panel-valuaciones"  class="">
+        <div class="max-w-3xl">
+          <h2 class="font-display text-3xl sm:text-4xl" data-txt="valuacion.titulo">Solicita tu avalúo virtual</h2>
+          <p class="mt-4 leading-relaxed text-grafito/85" data-txt="valuacion.intro">Para valuar tu pieza a distancia, comparte la siguiente información: tus datos de contacto, una breve descripción de la pieza, fotografías claras y, si cuentas con ella, la documentación que la acompaña (facturas, certificados, avalúos previos o historia de procedencia). Nuestro perito valuador la revisará y te entregará tu certificado de valuación.</p>
+          <div class="mt-6 grid gap-px bg-bronce/30 text-sm sm:grid-cols-2">
+            <p class="bg-marfil py-3 pr-4"><span class="lbl block">Costo del avalúo virtual</span><span class="font-display text-2xl text-museo" data-txt="valuacion.precio">$1,200 MXN</span></p>
+            <p class="bg-marfil py-3 sm:pl-6"><span class="lbl block">Entrega del certificado</span><span class="font-display text-2xl text-museo" data-txt="valuacion.tiempo_entrega">3 a 5 días hábiles</span></p>
+          </div>
+        </div>
+        <form name="valuaciones" method="POST" action="/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" data-form="valuaciones" class="mt-10 max-w-3xl">
+          <input type="hidden" name="form-name" value="valuaciones">
+          <input type="hidden" name="subject" value="Nueva solicitud: Avalúo virtual">
+          <p class="hidden"><label>No llenar: <input name="bot-field"></label></p>
+          <div class="grid gap-x-8 gap-y-7 sm:grid-cols-2">
+            <div><label class="lbl" for="valuaciones-nombre">Nombre completo</label><input class="field" id="valuaciones-nombre" name="nombre" type="text" required autocomplete="name" placeholder="Tu nombre"></div><div><label class="lbl" for="valuaciones-email">Correo electrónico</label><input class="field" id="valuaciones-email" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com"></div><div><label class="lbl" for="valuaciones-telefono">Teléfono</label><input class="field" id="valuaciones-telefono" name="telefono" type="tel" required autocomplete="tel" placeholder="81 0000 0000"></div><div class="sm:col-span-2"><label class="lbl" for="valuaciones-descripcion">Breve descripción de la pieza</label><textarea class="field resize-none" id="valuaciones-descripcion" name="descripcion" rows="4" required placeholder="Tipo de pieza, época o autor si lo conoces, medidas, material, estado…"></textarea></div>
+          </div>
+          <p class="lbl mt-10">Fotografías de la pieza (3)</p>
+          <p class="mt-3 border-l-2 border-oro bg-oro/10 px-4 py-3 text-sm leading-relaxed text-grafito" data-txt="valuacion.requisitos_fotos">Las fotografías deben ser de buena calidad y con buena iluminación: usa luz natural o bien distribuida, sin flash directo, con fondo liso y la imagen bien enfocada. Incluye vista frontal, reverso o base y un detalle como firma, marca o sello.</p>
+          <div class="mt-4 grid gap-4 sm:grid-cols-3">
+            <label class="slot" data-kind="img"><span class="st">Foto 1 · Vista frontal</span><span class="sn">Toca para elegir</span><input class="sr" type="file" name="foto1" accept="image/*" required></label><label class="slot" data-kind="img"><span class="st">Foto 2 · Reverso o base</span><span class="sn">Toca para elegir</span><input class="sr" type="file" name="foto2" accept="image/*" required></label><label class="slot" data-kind="img"><span class="st">Foto 3 · Detalle (firma, marca, sello)</span><span class="sn">Toca para elegir</span><input class="sr" type="file" name="foto3" accept="image/*" required></label><div class="sm:col-span-3"><p class="lbl mt-4">Papelería que acompaña a la pieza <span class="normal-case tracking-normal text-grafito/50">(opcional)</span></p><p class="mt-1 text-xs text-grafito/60">Facturas, certificados, avalúos previos o documentos de procedencia. Imagen o PDF.</p></div><label class="slot" data-kind="doc"><span class="st">Papelería 1 (opcional)</span><span class="sn">Toca para elegir</span><input class="sr" type="file" name="papeleria1" accept="image/*,application/pdf"></label><label class="slot" data-kind="doc"><span class="st">Papelería 2 (opcional)</span><span class="sn">Toca para elegir</span><input class="sr" type="file" name="papeleria2" accept="image/*,application/pdf"></label>
+          </div>
+          <p class="mt-3 text-xs text-grafito/60">Formatos JPG o PNG. Reducimos el peso de tus fotos automáticamente al enviarlas.</p>
+          <p class="mt-6 text-sm text-red-700" data-err role="alert"></p>
+          <button type="submit" class="btn-gold mt-4 w-full px-8 py-4 text-[11px] font-medium uppercase tracking-[.25em] sm:w-auto">Enviar información</button>
+          <div class="mt-10 border-t border-bronce/30 pt-8">
+            <p class="lbl">Paso 2 · Pago de tu avalúo</p>
+            <p class="mt-2 text-sm text-grafito/80" data-txt="valuacion.nota_pago">Tu avalúo inicia una vez que recibimos tu información y se confirma tu pago.</p>
+            <button type="button" id="payBtn" class="mt-4 inline-flex items-center gap-3 border border-museo px-7 py-3.5 text-[11px] font-medium uppercase tracking-[.25em] text-museo transition hover:bg-museo hover:text-champagne">Pagar con Mercado Pago · <span data-txt="valuacion.precio">$1,200 MXN</span></button>
+            <p class="mt-3 text-sm text-red-700" id="payErr" role="alert"></p>
+          </div>
+        </form>
+      </div>
+          <p class="mt-10 max-w-3xl border-t border-bronce/30 pt-6 text-sm text-grafito/75">¿Prefieres un avalúo presencial o tienes una colección completa? Escríbenos por <a class="text-bronce underline" data-wa data-wa-text="Hola, quiero información sobre una valuación de arte o antigüedades." href="https://wa.me/528180805580?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20valuaci%C3%B3n%20de%20arte%20o%20antig%C3%BCedades." target="_blank" rel="noopener">WhatsApp</a> o llama al <a class="text-bronce underline" data-tel data-txt="contacto.telefono" href="tel:+528180805580">81 8080 5580</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Preguntas frecuentes ===== -->
+    <section id="preguntas" class="bg-marfil py-24 text-museo sm:py-28">
+      <div class="mx-auto max-w-3xl px-6 sm:px-8">
+        <div class="reveal text-center">
+          <p class="mb-4 text-[11px] uppercase tracking-[.4em] text-bronce">Preguntas frecuentes</p>
+          <h2 class="font-display text-4xl font-medium sm:text-5xl" data-txt="pagina_valuaciones.faq.titulo">Sobre nuestras valuaciones</h2>
+          <div class="mx-auto mt-8 hairline w-40"></div>
+        </div>
+        <div class="reveal mt-12 divide-y divide-bronce/30 border-y border-bronce/30" data-list="pagina_valuaciones.faq.lista" data-list-type="faq">
+          <details class="py-6"><summary class="flex items-center justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl">¿Quién realiza las valuaciones de Casa Colección?</h3><span class="plus text-3xl font-light text-bronce">+</span></summary><p class="mt-4 leading-relaxed text-grafito/80">Las realiza personalmente Ana Leticia Noyola Fernandez, perito valuador de obras de arte y antigüedades y especialista de Casa Colección, galería de San Pedro Garza García, Nuevo León.</p></details><details class="py-6"><summary class="flex items-center justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl">¿Cuánto cuesta y cuánto tarda un avalúo virtual?</h3><span class="plus text-3xl font-light text-bronce">+</span></summary><p class="mt-4 leading-relaxed text-grafito/80">El avalúo virtual cuesta $1,200 MXN y el certificado de valuación se entrega en 3 a 5 días hábiles, a partir de que recibimos tu información completa y se confirma tu pago.</p></details><details class="py-6"><summary class="flex items-center justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl">¿Qué necesito para solicitar una valuación digital?</h3><span class="plus text-3xl font-light text-bronce">+</span></summary><p class="mt-4 leading-relaxed text-grafito/80">Tus datos de contacto, una breve descripción de la pieza, 3 fotografías de buena calidad y con buena luz (frente, reverso o base y un detalle como firma, marca o sello) y, si la tienes, la papelería que acompaña a la pieza: facturas, certificados, avalúos previos o historia de procedencia.</p></details><details class="py-6"><summary class="flex items-center justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl">¿Valúan piezas fuera de Nuevo León?</h3><span class="plus text-3xl font-light text-bronce">+</span></summary><p class="mt-4 leading-relaxed text-grafito/80">Sí. Trabajamos en toda la República Mexicana mediante avalúos digitales y, según el caso, coordinamos avalúos presenciales.</p></details><details class="py-6"><summary class="flex items-center justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl">¿Para qué puedo usar el certificado de valuación?</h3><span class="plus text-3xl font-light text-bronce">+</span></summary><p class="mt-4 leading-relaxed text-grafito/80">Para vender con un precio fundamentado, asegurar tus piezas, hacer un inventario, apoyar una sucesión o la repartición de bienes, o simplemente conocer el valor de lo que tienes. Si tu aseguradora, notario o autoridad pide un formato específico, consúltanos antes de solicitar el avalúo.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-oro/20 bg-museo pb-10 pt-16">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      <div class="grid gap-12 md:grid-cols-3">
+        <div>
+          <svg class="h-8 w-20 text-oro" aria-hidden="true"><use href="#key"/></svg>
+          <p class="mt-4 font-display text-2xl tracking-[.25em] text-champagne">CASA COLECCION</p>
+          <p class="mt-1 text-[10px] uppercase tracking-[.4em] text-marfil/60">Art &amp; Antiques Gallery</p>
+          <p class="mt-5 max-w-xs font-serif2 italic text-marfil/70" data-txt="footer.lema">“Coleccionar es preservar la belleza del pasado para enriquecer el futuro.”</p>
+        </div>
+        <div>
+          <p class="text-[11px] uppercase tracking-[.3em] text-oro">Enlaces</p>
+          <ul class="mt-5 space-y-3 text-sm text-marfil/80">
+            <li><a class="hover:text-oro" href="/#nosotros">Nosotros</a></li><li><a class="hover:text-oro" href="/#servicios">Servicios</a></li><li><a class="hover:text-oro" href="/valuaciones/">Valuaciones</a></li><li><a class="hover:text-oro" href="/#coleccion">Colección</a></li><li><a class="hover:text-oro" href="/#faq">Preguntas frecuentes</a></li><li><a class="hover:text-oro" href="/#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[11px] uppercase tracking-[.3em] text-oro">Visítanos</p>
+          <p class="mt-5 text-sm leading-relaxed text-marfil/80"><span data-txt="contacto.direccion">Río Orinoco #484, San Pedro Garza García, N.L.</span><br><a class="hover:text-oro" data-tel data-txt="contacto.telefono" href="tel:+528180805580">81 8080 5580</a></p>
+          <div class="mt-6 flex gap-3">
+            <a data-social="instagram" href="https://www.instagram.com/casacoleccionmx" target="_blank" rel="noopener" aria-label="Instagram @casacoleccionmx" class="flex h-11 w-11 items-center justify-center border border-oro/40 text-champagne transition hover:bg-oro hover:text-museo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a data-social="facebook" href="https://www.facebook.com/casacoleccionmx" target="_blank" rel="noopener" aria-label="Facebook" class="flex h-11 w-11 items-center justify-center border border-oro/40 text-champagne transition hover:bg-oro hover:text-museo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+            <a data-wa href="https://wa.me/528180805580" target="_blank" rel="noopener" aria-label="WhatsApp" class="flex h-11 w-11 items-center justify-center border border-oro/40 text-champagne transition hover:bg-oro hover:text-museo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l1.3-4.2A8 8 0 1110 19.3L4 20z"/><path d="M9 9c0 3 3 6 6 6l1.2-1.5-2-1-1 .7c-.8-.4-1.6-1.2-2-2l.7-1-1-2L9 9z"/></svg></a>
+          </div>
+          <p class="mt-3 text-xs text-marfil/60">@casacoleccionmx</p>
+        </div>
+      </div>
+      <div class="mt-14 flex flex-col items-center justify-between gap-3 border-t border-oro/15 pt-6 text-[11px] uppercase tracking-[.2em] text-marfil/50 sm:flex-row">
+        <p>© <span id="year">2026</span> Casa Colección. Todos los derechos reservados.</p>
+        <p>Arte · Historia · Inversión</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== VENTANA EMERGENTE (gracias) ===================== -->
+  <dialog id="modal" aria-labelledby="modalTitle">
+    <div class="w-[min(30rem,92vw)] border border-oro/50 bg-museo p-8 text-center text-marfil sm:p-10">
+      <svg class="mx-auto h-7 w-[4.5rem] text-oro" aria-hidden="true"><use href="#key"/></svg>
+      <h3 id="modalTitle" class="mt-5 font-display text-3xl text-champagne"></h3>
+      <p id="modalText" class="mt-4 leading-relaxed text-marfil/80"></p>
+      <div id="modalExtra" class="mt-6"></div>
+      <button id="modalClose" class="btn-line mt-8 px-8 py-3 text-[11px] uppercase tracking-[.25em]">Cerrar</button>
+    </div>
+  </dialog>
+
+  <script src="/js/site.js"></script>
+</body>
+</html>
