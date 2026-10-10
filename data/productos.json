@@ -2,26 +2,26 @@
   "productos": [
     {
       "publicado": true,
-      "etiqueta": "Pieza destacada · Siglo XVI",
       "titulo": "Niño Jesús como Salvador del Mundo",
+      "etiqueta": "Pieza destacada · Siglo XVI",
       "subtitulo": "Madera policromada",
-      "descripcion": "Escultura devocional de gran expresividad, con policromía conservada y presencia museística. Una pieza para quienes entienden la antigüedad como legado.",
+      "descripcion": "Esculturadel Niño jesus como Salvador del Mundo con policromía conservada. Proveniente de la Región de Malinas.",
       "imagen": "imagenes/nino-salvador.jpg",
       "enfoque": "centro"
     },
     {
       "publicado": true,
-      "etiqueta": "Escultura · Siglo XIX",
       "titulo": "Bodhisattva",
+      "etiqueta": "Escultura · Siglo XIX",
       "subtitulo": "Bronce",
-      "descripcion": "Figura sedente con aureola calada y rica pátina. Un objeto de contemplación que une espiritualidad, oficio y valor de colección.",
+      "descripcion": "Figura sedente con aureola calada y pátina dorada. Un objeto espiritual, proveniente de Asia, S. XIX",
       "imagen": "imagenes/bodhisattva.jpg",
       "enfoque": "arriba"
     },
     {
       "publicado": true,
-      "etiqueta": "Detalle que revela historia",
       "titulo": "Rostro con pátina de siglos",
+      "etiqueta": "Detalle que revela historia",
       "subtitulo": "Escultura de colección",
       "descripcion": "Belleza en los gestos, alma en cada trazo. El desgaste del tiempo también es parte del valor de una pieza auténtica.",
       "imagen": "imagenes/rostro-patina.jpg",
@@ -29,8 +29,8 @@
     },
     {
       "publicado": true,
-      "etiqueta": "Nueva colección · Arte moderno",
       "titulo": "Grabado enmarcado",
+      "etiqueta": "Nueva colección · Arte moderno",
       "subtitulo": "Piezas con carácter, gesto y composición",
       "descripcion": "Arte moderno que aporta contraste, genera conversación y transforma un espacio. Enmarcado y listo para colgar.",
       "imagen": "imagenes/grabado-moderno.jpg",
@@ -38,8 +38,8 @@
     },
     {
       "publicado": true,
-      "etiqueta": "Antigüedad clásica",
       "titulo": "Busto clásico",
+      "etiqueta": "Antigüedad clásica",
       "subtitulo": "Detalles que cuentan historias",
       "descripcion": "Inspirado en la estatuaria grecorromana, un busto de presencia serena que convierte cualquier rincón en una pequeña galería.",
       "imagen": "imagenes/busto-clasico.jpg",
@@ -47,8 +47,8 @@
     },
     {
       "publicado": true,
-      "etiqueta": "Objetos de colección",
       "titulo": "Reloj antiguo",
+      "etiqueta": "Objetos de colección",
       "subtitulo": "El tiempo tiene su valor",
       "descripcion": "Esfera con numeración romana y carácter de otra época. Una pieza funcional que además es memoria.",
       "imagen": "imagenes/reloj-antiguo.jpg",
@@ -56,8 +56,8 @@
     },
     {
       "publicado": true,
-      "etiqueta": "Detalles que trascienden el tiempo",
       "titulo": "Marco dorado barroco",
+      "etiqueta": "Detalles que trascienden el tiempo",
       "subtitulo": "Talla y dorado a la hoja",
       "descripcion": "La belleza también está en los detalles: volutas y follajes tallados que enmarcan obras con la dignidad que merecen.",
       "imagen": "imagenes/marco-barroco.jpg",
