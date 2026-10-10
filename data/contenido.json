@@ -14,11 +14,11 @@
       },
       {
         "titulo": "Historia",
-        "descripcion": "Procedencia y siglos de relato"
+        "descripcion": "Procedencia y Siglos de Historia"
       },
       {
         "titulo": "Inversión",
-        "descripcion": "Valor que perdura en el tiempo"
+        "descripcion": "Valor que Perdura en el Tiempo"
       }
     ]
   },
@@ -26,20 +26,20 @@
     "etiqueta": "Sobre nosotros",
     "titulo": "Más que objetos,",
     "titulo_cursiva": "historias que trascienden",
-    "intro": "Casa Colección es una galería de arte y antigüedades en San Pedro Garza García, creada para quienes buscan piezas con alma, procedencia y valor duradero.",
-    "texto": "Detrás de cada selección hay más de tres décadas de oficio en el arte y cuatro décadas recorriendo el mundo en busca de objetos extraordinarios. Como perito valuador de obras de arte y antigüedades, cuidamos la autenticidad, la historia y la inversión de cada pieza, para que coleccionistas y nuevos amantes del arte compren con confianza.",
+    "intro": "Casa Colección es una galería de arte y antigüedades en San Pedro Garza García, creada para quienes buscan piezas únicas y de gran valor histórico.",
+    "texto": "Detrás de cada selección hay más de cinco décadas de oficio en el arte. Como perito valuador de obras de arte y antigüedades, cuidamos la autenticidad, la historia y la inversión de cada pieza, para que coleccionistas y nuevos amantes del arte compren con confianza.",
     "stats": [
       {
         "numero": "1971",
         "texto": "Creando colecciones"
       },
       {
-        "numero": "33+",
-        "texto": "Años en el arte"
+        "numero": "33",
+        "texto": "Años como Perito Valuador"
       },
       {
-        "numero": "40",
-        "texto": "Años viajando por el mundo"
+        "numero": "55",
+        "texto": "Años en el Mercado del Arte"
       },
       {
         "numero": "Perito",
@@ -49,18 +49,18 @@
   },
   "servicios": {
     "etiqueta": "Nuestros servicios",
-    "titulo": "Acompañamiento experto en cada etapa",
+    "titulo": "Acompañamiento Experto en Cada Etapa",
     "items": [
       {
         "titulo": "Valuaciones",
-        "descripcion": "Avalúos de arte y antigüedades por perito valuador, para seguros, herencias, compraventas y documentación patrimonial.",
+        "descripcion": "Avalúos de arte y antigüedades Certificados para seguros, herencias, compraventas y documentación patrimonial.",
         "punto1": "Avalúo virtual con certificado",
         "punto2": "Entrega en 3 a 5 días hábiles"
       },
       {
         "titulo": "Consignaciones",
-        "descripcion": "Confía tu pieza a nuestra galería: la evaluamos, la presentamos a coleccionistas y la vendemos al mejor valor.",
-        "punto1": "Exhibición curada",
+        "descripcion": "Confía tu pieza a nuestra galería: la valuamos, la presentamos a coleccionistas y la vendemos en el precio justo de mercado.",
+        "punto1": "Exhibición Cuidadosamente Curada",
         "punto2": "Acuerdo claro y transparente"
       },
       {
@@ -71,9 +71,9 @@
       },
       {
         "titulo": "Restauraciones",
-        "descripcion": "Conservación y restauración respetuosa para devolver belleza y estabilidad a tus obras, muebles y objetos antiguos.",
+        "descripcion": "Conservación y restauración respetuosa por un equipo de expertos en la materia con más de 40 años de experiencia.",
         "punto1": "Diagnóstico previo",
-        "punto2": "Respeto a la pátina original"
+        "punto2": "Restauraciones Reversibles"
       }
     ]
   },
@@ -92,8 +92,8 @@
     "requisitos_fotos": "Fotografías de buena calidad y buena iluminación: luz natural o bien distribuida, sin flash directo, fondo liso y bien enfocadas. Incluye vista frontal, reverso o base y un detalle como firma, marca o sello."
   },
   "ventas": {
-    "titulo": "Encuentra tu próxima pieza",
-    "intro": "Dinos qué pieza te interesa o qué estás buscando (época, estilo, autor, tamaño, presupuesto aproximado). Si tienes una imagen de referencia, puedes adjuntarla. Te contactaremos con opciones de nuestra colección o iniciaremos la búsqueda por ti."
+    "titulo": "Quieres vender tu pieza o colección?",
+    "intro": "Dinos qué pieza quieres vender (época, estilo, autor, tamaño). Si tienes una imagen de referencia, puedes adjuntarla. Te contactaremos a la brevedad si tenemos cliente para tu pieza."
   },
   "restauraciones": {
     "titulo": "Solicita una restauración",
@@ -105,7 +105,7 @@
     "preguntas": [
       {
         "pregunta": "¿Cómo se determina el valor de una pieza?",
-        "respuesta": "Un perito valuador analiza autenticidad, época, materiales, estado de conservación, procedencia y comportamiento del mercado. Recibes un informe por escrito que puedes usar para seguros, herencias o compraventas."
+        "respuesta": "Nuestro equipo y nuestro perito valuador analizan autenticidad, época, materiales, estado de conservación, procedencia y comportamiento del mercado. Recibes un informe por escrito que puedes usar para aseguranza, mudanzas, herencias o compraventas."
       },
       {
         "pregunta": "¿Cómo funciona la consignación de mis piezas?",
@@ -119,7 +119,7 @@
   },
   "newsletter": {
     "titulo": "Sé el primero en conocer nuestras nuevas piezas",
-    "texto": "Recibe invitaciones a exposiciones privadas, nuevas piezas y novedades de nuestras subastas."
+    "texto": "Recibe invitaciones a exposiciones privadas, entérate antes que nadie de nuevas piezas y fechas de nuestras ventas especiales."
   },
   "contacto": {
     "direccion": "Río Orinoco #484, San Pedro Garza García, N.L.",
@@ -131,7 +131,7 @@
     "lema": "“Coleccionar es preservar la belleza del pasado para enriquecer el futuro.”"
   },
   "pagina_valuaciones": {
-    "intro": "Avalúos profesionales de pinturas, esculturas, muebles, porcelana, plata, bronce, arte moderno y antigüedades, realizados personalmente por **Ana Leticia Noyola Fernandez**, especialista en arte, antigüedades y valuaciones de Casa Colección. Presenciales en Monterrey y San Pedro Garza García, y digitales en toda la República Mexicana.",
+    "intro": "Avalúos profesionales de pinturas, esculturas, muebles, porcelana, plata, bronce, arte moderno y antigüedades, realizados personalmente por **Ana Leticia Noyola Fernandez**, y por nuestro equipo de especialistas en arte, antigüedades y valuaciones de Casa Colección y La Buhardilla Arte y Antigüedades con 55 años de experiencia y presencia en el mercado del arte y las antigüedades. Avalúos Presenciales en Monterrey y San Pedro Garza García, y digitales en toda la República Mexicana.",
     "chips": [
       {
         "titulo": "Presencial y digital",
@@ -149,22 +149,22 @@
     "quien": {
       "cargo": "Especialista en arte, antigüedades y valuaciones",
       "ficha": "Perito valuador de obras de arte y antigüedades\nCasa Colección · Art & Antiques Gallery\nSan Pedro Garza García, Nuevo León, México.",
-      "titulo": "Una sola especialista,",
-      "titulo_cursiva": "toda una vida entre arte e historia",
-      "parrafo1": "Cada valuación de Casa Colección la realiza personalmente **Ana Leticia Noyola Fernandez**, perito valuador de obras de arte y antigüedades. Tu pieza no pasa por un equipo desconocido: la revisa y la certifica la misma especialista.",
-      "parrafo2": "Ana Leticia Noyola Fernandez suma más de 33 años de trabajo en el arte y 40 años recorriendo el mundo en busca de piezas extraordinarias, y se respalda en los 55 años de experiencia familiar y empresarial de Casa Colección, galería que crea colecciones desde 1971 en San Pedro Garza García, Nuevo León.",
+      "titulo": "Un equipo de especialistas en Arte y Antigüedades",
+      "titulo_cursiva": "Toda una vida entre arte e historia",
+      "parrafo1": "Cada valuación de Casa Colección la realiza personalmente **Ana Leticia Noyola Fernandez**, perito valuador de obras de arte y antigüedades. Contamos con un equipo con 55 de años de experiencia en el mercado del Arte y las Antigüedades",
+      "parrafo2": "Ana Leticia Noyola Fernandez suma más de 33 años de trabajo en el arte y 40 años recorriendo el mundo en busca de piezas extraordinarias, y se respalda en los 55 años de experiencia familiar y empresarial de La Buhardilla, galería que crea colecciones desde 1971 en San Pedro Garza García, Nuevo León.",
       "stats": [
         {
           "numero": "55",
-          "texto": "Años de experiencia familiar y empresarial"
+          "texto": "Años de experiencia en el Mercado del Arte y las Antigüedades"
         },
         {
-          "numero": "33+",
-          "texto": "Años en el arte"
+          "numero": "33",
+          "texto": "Años de Experiencia como Perito Valuador Especializado"
         },
         {
-          "numero": "40",
-          "texto": "Años viajando por el mundo"
+          "numero": "4",
+          "texto": "Empresas hermanas del Grupo La Buhardilla"
         }
       ]
     },
@@ -173,19 +173,19 @@
       "lista": [
         {
           "titulo": "Pinturas",
-          "descripcion": "Óleos, acuarelas, grabados y obra sobre papel o tela, antiguos y modernos."
+          "descripcion": "Óleos, acuarelas, dibujos, grabados y obra sobre papel o tela, madera, masonite y otros soportes, antiguos y modernos."
         },
         {
           "titulo": "Esculturas",
-          "descripcion": "Piezas en madera, piedra, mármol y otros materiales, de distintas épocas y culturas."
+          "descripcion": "Piezas en madera, piedra, mármol, marfil, y otros materiales, de distintas épocas y culturas."
         },
         {
           "titulo": "Muebles",
-          "descripcion": "Mobiliario antiguo y de colección: cómodas, sillería, mesas y vitrinas."
+          "descripcion": "Mobiliario antiguo y de colección: cómodas, sillería, mesas, arcones, bufeteros, aparadores, sillones, comedores y vitrinas."
         },
         {
           "titulo": "Porcelana y cerámica",
-          "descripcion": "Vajillas, jarrones, figuras y piezas decorativas."
+          "descripcion": "Vajillas, jarrones, floreros, figuras y piezas decorativas."
         },
         {
           "titulo": "Plata",
@@ -201,7 +201,7 @@
         },
         {
           "titulo": "Antigüedades y objetos de colección",
-          "descripcion": "Relojes, cristalería y objetos con historia, entre muchos otros."
+          "descripcion": "Relojes, cristalería, entre muchos otros."
         }
       ],
       "nota": "¿No ves tu pieza en la lista? Consúltanos: valuamos muchas más categorías."
@@ -227,7 +227,7 @@
         },
         {
           "titulo": "Repartición de bienes",
-          "descripcion": "Valores claros para repartir piezas entre herederos o familiares."
+          "descripcion": "Valores claros para repartir justa y equitativamente las piezas entre herederos o familiares."
         },
         {
           "titulo": "Conocimiento personal",
@@ -252,7 +252,7 @@
         },
         {
           "titulo": "Revisión por la perito valuadora",
-          "descripcion": "Ana Leticia Noyola Fernandez analiza tu pieza: autenticidad, época, materiales, estado y mercado."
+          "descripcion": "Ana Leticia Noyola Fernández y el equipo de valuadores de La Buhardilla y Casa Colección analizan tu pieza: autenticidad, época, materiales, estado y mercado."
         },
         {
           "titulo": "Recibe tu certificado",
@@ -265,7 +265,7 @@
       "lista": [
         {
           "titulo": "¿Quién realiza las valuaciones de Casa Colección?",
-          "descripcion": "Las realiza personalmente Ana Leticia Noyola Fernandez, perito valuador de obras de arte y antigüedades y especialista de Casa Colección, galería de San Pedro Garza García, Nuevo León."
+          "descripcion": "Las realiza personalmente Ana Leticia Noyola Fernandez, perito valuador de obras de arte y antigüedades y especialista de Casa Colección, junto a un equipo de expertos calificados y con 55 años de experiencia en el mercado."
         },
         {
           "titulo": "¿Cuánto cuesta y cuánto tarda un avalúo virtual?",
