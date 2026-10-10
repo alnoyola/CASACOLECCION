@@ -1,13 +1,13 @@
 # Configuración del panel de administración (Decap CMS)
 backend:
   name: github
-  repo: TU-USUARIO-GITHUB/casacoleccion-web   # <-- CAMBIA ESTO: usuario/nombre-del-repositorio
-  branch: main
+  repo: alnoyola/casacoleccion
+  branch: master
 
 locale: es
 media_folder: imagenes        # carpeta donde se guardan las fotos subidas
 public_folder: /imagenes      # ruta pública de esas fotos
-site_url: https://TU-SITIO.netlify.app   # <-- opcional: cámbialo por tu dirección
+site_url: https://casacoleccion.netlify.app
 
 collections:
   - name: piezas
