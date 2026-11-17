@@ -15,7 +15,7 @@
       "etiqueta": "Escultura · Siglo XIX",
       "subtitulo": "Bronce",
       "descripcion": "Figura sedente con aureola calada y pátina dorada. Un objeto espiritual, proveniente de Asia, S. XIX",
-      "imagen": "imagenes/bodhisattva.jpg",
+      "imagen": "/imagenes/bodhisattva.jpg",
       "enfoque": "arriba"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "publicado": true,
-      "titulo": "Marco dorado barroco",
+      "titulo": "Caja China Laqueada",
       "etiqueta": "Caja China",
       "subtitulo": "Madera Laqueada S. XIX",
       "descripcion": "Caja China en Laca Roja, con medallon al centro que significa la longevidad, decorada con detalles geometricos.",
@@ -65,10 +65,10 @@
     },
     {
       "publicado": true,
-      "titulo": "Francisco Castro Leñero",
-      "etiqueta": "Estructuras",
+      "titulo": "Estructuras",
+      "etiqueta": "Francisco Castro Leñero",
       "subtitulo": "Litografía",
-      "descripcion": "Estructuras \nLitografía 46/50\nFrancisco Castro Leñero \nSin Marco \nImagen 47 x 37 cms \nPapel 72 x 54.5 cms",
+      "descripcion": "Estructuras \nLitografía 46/50\nFrancisco Castro Leñero \nSin Marco \nImagen 47 x 37 cms \nPapel 72 x 54.5 cms\n\nFrancisco Castro Leñero (Ciudad de México, 1954 - 2022) destacado pintor, grabador, escultor y académico mexicano.",
       "imagen": "/imagenes/IMG_0015.jpg",
       "enfoque": "centro"
     },
@@ -77,7 +77,7 @@
       "titulo": "Celebracion Temprana",
       "etiqueta": "Guillermo Olguin",
       "subtitulo": "Colografia",
-      "descripcion": "Celebración Temprana\nGuillermo Olguin\nColografía 31/40\nImagen 44.5 x 48 cms\nPapel 44.5 x 48 cms",
+      "descripcion": "Celebración Temprana\nGuillermo Olguin\nColografía 31/40\nImagen 44.5 x 48 cms\nPapel 44.5 x 48 cms\n\n(Ciudad de México, 1969) es un destacado artista plástico contemporáneo mexicano, estrechamente vinculado a la escena artística de Oaxaca. Divide su vida y trabajo entre Oaxaca y Nueva York, explorando temas como la migración, la memoria y el simbolismo cultural.",
       "imagen": "/imagenes/IMG_0019.jpg",
       "enfoque": "centro"
     },
@@ -86,8 +86,62 @@
       "titulo": "Guardian del Manglar",
       "etiqueta": "Guillermo Olguín",
       "subtitulo": "Colografía",
-      "descripcion": "Guardian del Manglar\nGuillermo Olguín\nColografía\nImagen 38 x 45.5 cms \nPapel 48 x 57 cms",
+      "descripcion": "Guardian del Manglar\nGuillermo Olguín\nColografía\nImagen 38 x 45.5 cms \nPapel 48 x 57 cms\n\n(Ciudad de México, 1969) es un destacado artista plástico contemporáneo mexicano, estrechamente vinculado a la escena artística de Oaxaca. Divide su vida y trabajo entre Oaxaca y Nueva York, explorando temas como la migración, la memoria y el simbolismo cultural.",
       "imagen": "/imagenes/IMG_0032.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Vasija",
+      "etiqueta": "Guillermo Olguín",
+      "subtitulo": "Colografía",
+      "descripcion": "Vasija\nGuillermo Olguín\nColografía 36/40\nImagen 44.5 x 48 cms \nPapel 44.5 x 48 cms\n\n(Ciudad de México, 1969) es un destacado artista plástico contemporáneo mexicano, estrechamente vinculado a la escena artística de Oaxaca. Divide su vida y trabajo entre Oaxaca y Nueva York, explorando temas como la migración, la memoria y el simbolismo cultural.",
+      "imagen": "/imagenes/IMG_0034.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Sergio Hernández",
+      "etiqueta": "aguafuerte, azúcar y aguatinta",
+      "subtitulo": "Papel Hahnemühle",
+      "descripcion": "Sergio Hernández\naguafuerte, azúcar y aguatinta sobre papel Hahnemühle\n2018\nImagen 116.5 x 89 cms \nPapel 140 x 110.5 cms \n\nSergio Hernandez (Oaxaca 1957 - ) \n\nDe niño, su familia emigró a la Ciudad de México en búsqueda de oportunidades. A los 16 años ingresó a la Escuela Nacional de Artes Plásticas en la Academia de San Carlos de 1973 a 1974 y posteriormente en la Escuela Nacional de Pintura, Escultura y Grabado “La Esmeralda”, donde estudió de 1975 a 1981.\nEn 1987 emigró a París, y año siguiente volvió a Oaxaca.",
+      "imagen": "/imagenes/IMG_9755.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Sergio Hernandez",
+      "etiqueta": "azúcar y ácido directo",
+      "subtitulo": "Papel Hahnemühle",
+      "descripcion": "Sergio Hernández\nazúcar y ácido directo sobre papel Hahnemühle\nImagen 39 x 49 cms \nPapel 54 x 61 cms \n\nSergio Hernandez (Oaxaca 1957 - ) \n\nDe niño, su familia emigró a la Ciudad de México en búsqueda de oportunidades. A los 16 años ingresó a la Escuela Nacional de Artes Plásticas en la Academia de San Carlos de 1973 a 1974 y posteriormente en la Escuela Nacional de Pintura, Escultura y Grabado “La Esmeralda”, donde estudió de 1975 a 1981.\nEn 1987 emigró a París, y año siguiente volvió a Oaxaca",
+      "imagen": "/imagenes/IMG_9757.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Sergio Hernandez",
+      "etiqueta": "azúcar y ácido directo",
+      "subtitulo": "Papel Hahnemühle",
+      "descripcion": "Sergio Hernández\nazúcar y ácido directo sobre papel Hahnemühle\nImagen 39 x 49 cms \nPapel 54 x 61 cms \n\nSergio Hernandez (Oaxaca 1957 - ) \n\nDe niño, su familia emigró a la Ciudad de México en búsqueda de oportunidades. A los 16 años ingresó a la Escuela Nacional de Artes Plásticas en la Academia de San Carlos de 1973 a 1974 y posteriormente en la Escuela Nacional de Pintura, Escultura y Grabado “La Esmeralda”, donde estudió de 1975 a 1981.\nEn 1987 emigró a París, y año siguiente volvió a Oaxaca",
+      "imagen": "/imagenes/IMG_9758.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Sergio Hernández",
+      "etiqueta": "aguatinta y aguafuerte",
+      "subtitulo": "papel Hahnemühle",
+      "descripcion": "Sergio Hernández\naguatinta y aguafuerte sobre papel Hahnemühle\nImagen 105 x 79 cms \nPapel 125 x 100 cms \n\nSergio Hernandez (Oaxaca 1957 - ) \n\nDe niño, su familia emigró a la Ciudad de México en búsqueda de oportunidades. A los 16 años ingresó a la Escuela Nacional de Artes Plásticas en la Academia de San Carlos de 1973 a 1974 y posteriormente en la Escuela Nacional de Pintura, Escultura y Grabado “La Esmeralda”, donde estudió de 1975 a 1981.\nEn 1987 emigró a París, y año siguiente volvió a Oaxaca",
+      "imagen": "/imagenes/IMG_9759.JPEG",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Tumba y Raja",
+      "etiqueta": "Jose Bedia",
+      "subtitulo": "Grabado",
+      "descripcion": "Tumba y Raja\nGrabado \n2019 \nImagen 89 x 151.5 cms \nPapel 109 x 172 cms \n\nJose Bedia (1959 - ) destacado pintor, dibujante e instalacionista cubano. Es considerado una figura clave del arte contemporáneo latinoamericano por fusionar tradiciones espirituales afroatlánticas e indígenas con el lenguaje visual moderno.",
+      "imagen": "/imagenes/IMG_0020.jpg",
       "enfoque": "centro"
     }
   ]
