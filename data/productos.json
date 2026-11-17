@@ -62,6 +62,33 @@
       "descripcion": "Caja China en Laca Roja, con medallon al centro que significa la longevidad, decorada con detalles geometricos.",
       "imagen": "/imagenes/Red lacquered antique on warm gray.png",
       "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Francisco Castro Leñero",
+      "etiqueta": "Estructuras",
+      "subtitulo": "Litografía",
+      "descripcion": "Estructuras \nLitografía 46/50\nFrancisco Castro Leñero \nSin Marco \nImagen 47 x 37 cms \nPapel 72 x 54.5 cms",
+      "imagen": "/imagenes/IMG_0015.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Celebracion Temprana",
+      "etiqueta": "Guillermo Olguin",
+      "subtitulo": "Colografia",
+      "descripcion": "Celebración Temprana\nGuillermo Olguin\nColografía 31/40\nImagen 44.5 x 48 cms\nPapel 44.5 x 48 cms",
+      "imagen": "/imagenes/IMG_0019.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Guardian del Manglar",
+      "etiqueta": "Guillermo Olguín",
+      "subtitulo": "Colografía",
+      "descripcion": "Guardian del Manglar\nGuillermo Olguín\nColografía\nImagen 38 x 45.5 cms \nPapel 48 x 57 cms",
+      "imagen": "/imagenes/IMG_0032.jpg",
+      "enfoque": "centro"
     }
   ]
 }
