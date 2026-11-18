@@ -38,24 +38,6 @@
     },
     {
       "publicado": true,
-      "titulo": "Florero Art Deco",
-      "etiqueta": "Cristal Frances Esmaltado s. c.1920",
-      "subtitulo": "Firmado Andre Delatte",
-      "descripcion": "Florero de estilo Art Deco, firmado \nNancy, Francia",
-      "imagen": "/imagenes/Decorated glass vase on charcoal backdrop.png",
-      "enfoque": "centro"
-    },
-    {
-      "publicado": true,
-      "titulo": "Par de Miniaturas Criselefantinas",
-      "etiqueta": "Bronce y Marfil c.1920",
-      "subtitulo": "Par de Niños Nenette y Rintintin",
-      "descripcion": "Par de esculturas pequeñas del escultor frances Georges Omerth (activo 1895-1925). \nFiguras que sirven como amuleto de buena suerte o decorativas.",
-      "imagen": "/imagenes/e42b302c-d115-49e0-b2a7-7c88f53da5ac.JPG",
-      "enfoque": "centro"
-    },
-    {
-      "publicado": true,
       "titulo": "Caja China Laqueada",
       "etiqueta": "Caja China",
       "subtitulo": "Madera Laqueada S. XIX",
@@ -65,11 +47,29 @@
     },
     {
       "publicado": true,
+      "titulo": "Florero Art Deco",
+      "etiqueta": "Cristal Frances Esmaltado s. c.1920",
+      "subtitulo": "Firmado Andre Delatte",
+      "descripcion": "Florero de estilo Art Deco, firmado \nNancy, Francia",
+      "imagen": "/imagenes/Decorated glass vase on charcoal backdrop.png",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
       "titulo": "Estructuras",
       "etiqueta": "Francisco Castro Leñero",
       "subtitulo": "Litografía",
       "descripcion": "Estructuras \nLitografía 46/50\nFrancisco Castro Leñero \nSin Marco \nImagen 47 x 37 cms \nPapel 72 x 54.5 cms\n\nFrancisco Castro Leñero (Ciudad de México, 1954 - 2022) destacado pintor, grabador, escultor y académico mexicano.",
       "imagen": "/imagenes/IMG_0015.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Par de Miniaturas Criselefantinas",
+      "etiqueta": "Bronce y Marfil c.1920",
+      "subtitulo": "Par de Niños Nenette y Rintintin",
+      "descripcion": "Par de esculturas pequeñas del escultor frances Georges Omerth (activo 1895-1925). \nFiguras que sirven como amuleto de buena suerte o decorativas.",
+      "imagen": "/imagenes/e42b302c-d115-49e0-b2a7-7c88f53da5ac.JPG",
       "enfoque": "centro"
     },
     {
@@ -92,20 +92,20 @@
     },
     {
       "publicado": true,
-      "titulo": "Vasija",
-      "etiqueta": "Guillermo Olguín",
-      "subtitulo": "Colografía",
-      "descripcion": "Vasija\nGuillermo Olguín\nColografía 36/40\nImagen 44.5 x 48 cms \nPapel 44.5 x 48 cms\n\n(Ciudad de México, 1969) es un destacado artista plástico contemporáneo mexicano, estrechamente vinculado a la escena artística de Oaxaca. Divide su vida y trabajo entre Oaxaca y Nueva York, explorando temas como la migración, la memoria y el simbolismo cultural.",
-      "imagen": "/imagenes/IMG_0034.jpg",
-      "enfoque": "centro"
-    },
-    {
-      "publicado": true,
       "titulo": "Sergio Hernández",
       "etiqueta": "aguafuerte, azúcar y aguatinta",
       "subtitulo": "Papel Hahnemühle",
       "descripcion": "Sergio Hernández\naguafuerte, azúcar y aguatinta sobre papel Hahnemühle\n2018\nImagen 116.5 x 89 cms \nPapel 140 x 110.5 cms \n\nSergio Hernandez (Oaxaca 1957 - ) \n\nDe niño, su familia emigró a la Ciudad de México en búsqueda de oportunidades. A los 16 años ingresó a la Escuela Nacional de Artes Plásticas en la Academia de San Carlos de 1973 a 1974 y posteriormente en la Escuela Nacional de Pintura, Escultura y Grabado “La Esmeralda”, donde estudió de 1975 a 1981.\nEn 1987 emigró a París, y año siguiente volvió a Oaxaca.",
       "imagen": "/imagenes/IMG_9755.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Vasija",
+      "etiqueta": "Guillermo Olguín",
+      "subtitulo": "Colografía",
+      "descripcion": "Vasija\nGuillermo Olguín\nColografía 36/40\nImagen 44.5 x 48 cms \nPapel 44.5 x 48 cms\n\n(Ciudad de México, 1969) es un destacado artista plástico contemporáneo mexicano, estrechamente vinculado a la escena artística de Oaxaca. Divide su vida y trabajo entre Oaxaca y Nueva York, explorando temas como la migración, la memoria y el simbolismo cultural.",
+      "imagen": "/imagenes/IMG_0034.jpg",
       "enfoque": "centro"
     },
     {
@@ -128,6 +128,15 @@
     },
     {
       "publicado": true,
+      "titulo": "Tumba y Raja",
+      "etiqueta": "Jose Bedia",
+      "subtitulo": "Grabado",
+      "descripcion": "Tumba y Raja\nGrabado \n2019 \nImagen 89 x 151.5 cms \nPapel 109 x 172 cms \n\nJose Bedia (1959 - ) destacado pintor, dibujante e instalacionista cubano. Es considerado una figura clave del arte contemporáneo latinoamericano por fusionar tradiciones espirituales afroatlánticas e indígenas con el lenguaje visual moderno.",
+      "imagen": "/imagenes/IMG_0020.jpg",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
       "titulo": "Sergio Hernández",
       "etiqueta": "aguatinta y aguafuerte",
       "subtitulo": "papel Hahnemühle",
@@ -137,11 +146,29 @@
     },
     {
       "publicado": true,
-      "titulo": "Tumba y Raja",
-      "etiqueta": "Jose Bedia",
-      "subtitulo": "Grabado",
-      "descripcion": "Tumba y Raja\nGrabado \n2019 \nImagen 89 x 151.5 cms \nPapel 109 x 172 cms \n\nJose Bedia (1959 - ) destacado pintor, dibujante e instalacionista cubano. Es considerado una figura clave del arte contemporáneo latinoamericano por fusionar tradiciones espirituales afroatlánticas e indígenas con el lenguaje visual moderno.",
-      "imagen": "/imagenes/IMG_0020.jpg",
+      "titulo": ";use Champêtre",
+      "etiqueta": "Louis Moreau",
+      "subtitulo": "Escultura en metal c. 1900",
+      "descripcion": "Escultura en metal de origen frances c. 1900 de estilo Art Nouveau\nFigura feminina alegórica de inspiración clasica.",
+      "imagen": "/imagenes/01E2EDAA-2FE0-4207-9CB3-7378E1299734.PNG",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Bowl Cameo Glass",
+      "etiqueta": "Emille Gallé",
+      "subtitulo": "de origen Frances c. 1900",
+      "descripcion": "Emille Gallé (1846-1904)\n\nBowl de vidrio camafeo de Émile Gallé (cameo glass) de estilo Art Nouveau. \nNancy, Francia, c. 1900\nEl vidrio camafeo se caracteriza por combinar varias capas de vidrio de distintos colores y tallarlas o grabarlas al ácido para crear relieves, generalmente inspirados en la naturaleza.",
+      "imagen": "/imagenes/D2D594E6-A43C-42B8-A516-7A4E26BCA58E.PNG",
+      "enfoque": "centro"
+    },
+    {
+      "publicado": true,
+      "titulo": "Platon de Majolica",
+      "etiqueta": "Deruta Orvieto Galletto",
+      "subtitulo": "Ceramica Italiana",
+      "descripcion": "Esta es una pieza pintada a mano en majolica italiana, producida por los artesanos de Deruta, Italia. S. XX",
+      "imagen": "/imagenes/IMG_0129.jpg",
       "enfoque": "centro"
     }
   ]
